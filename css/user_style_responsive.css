@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+/* -------------------------------------------------------------------
+
+[Table of contents]
+
+01. Intro
+02. info
+03. upload 
+04. query
+05. right query
+06. left query
+06. footer
+
+------------------------------------------------------------------- */
+
+
+/*** 01. Intro ***/
+
+
+
+/*** 01. info ***/
+
+
+
+
+/*** 01. upload ***/
+
+/*
+@media not|only mediatype and (expressions) {
+  CSS-Code;
+}
+*/
+@media screen and (max-width: 450px) {
+
+.panel_upload {
+	
+	width: 100%;
+	height: 40%;
+	position:relative;
+	border:1px solid green;
+
+	
+}
+
+.panel_upload .container{
+	width: 100%;
+	height: 100%;
+	
+	position: relative;
+	
+	display: -webkit-flex;
+	display: flex;  
+	
+	-webkit-flex-flow: column wrap;
+	flex-flow: column wrap;
+
+	justify-content: space-between;
+	clear: none;
+	
+	padding: 10px 10px 10px 10px;
+	
+	background-color: var(--background-container);
+	
+	
+}
+
+.panel_upload .container .dragdrop_area{
+	width: 100%;
+	height: 70%;
+	
+	
+	border:var(--debug-border-2);
+	
+	float:right;
+	
+
+}
+
+.panel_upload  .container .buttons  {
+	border:1px solid green;
+	
+	background-color: var(--background-button);
+	
+	height: 30%;
+	width: 100%;
+	
+	float:left;
+	
+	display: -webkit-flex;
+	display: flex;  
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	
+	float:left;
+	text-align:center;
+	
+}
+
+
+.panel_upload  .container .buttons  .submit_button{
+	border:var(--debug-border-3);
+	background-color: var(--background-button);
+	
+	width: 100%;
+	height: 50%;
+	
+	cursor: pointer;
+}
+.panel_upload  .container .buttons .upload_button{
+	
+	border:var(--debug-border-3);
+	background-color: var(--background-button);
+	
+	width: 100%;
+	height: 50%;
+	
+	
+	cursor: pointer;
+
+	
+	
+	
+}
+
+
+/*** 01. query ***/
+
+@media screen and (max-width: 450px) {
+	
+	.panel_query {
+	width: 100%;
+	height: 70%;
+	position: relative;
+	padding: 10px 10px 10px 10px;
+	
+	background-color: #04081f;
+	border:1px solid red;
+	
+
+	
+	
+}
+.panel_query .container  {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	padding: 10px 10px 10px 10px;
+	
+	background-color: #0f131f;
+	border:1px solid red;
+	
+	
+	display: -webkit-flex;
+	display: flex;  
+	-webkit-flex-flow: column wrap;
+	flex-flow: column wrap;
+	
+}
+
+/*** 01. right query ***/
+.panel_query .container .right {
+	width: 100%;
+	height: 50%;
+	position: relative;
+	
+	border:1px solid red;
+}
+
+.panel_query .container.right .q_result_area{
+	
+}
+
+/*** 01. left query ***/
+.panel_query .container .left {
+	
+	width: 100%;
+	height: 50%;
+	position: relative;
+	
+	flex-flow: row wrap;
+	border:1px solid red;
+}
+.panel_query .container.left .query_control{
+	
+}
+.panel_query .container .left .query_control .query_button{
+	
+}
+.panel_query .container .left .query_control .query_input{
+	
+}
+	
+}
+
+/*** 01. right query ***/
+
+
+
+
+
+/*** 01. left query ***/
+
+
+
+/*** 01. footer ***/
+
