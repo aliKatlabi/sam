@@ -20,6 +20,7 @@
   
   --background:#2f2f2f;
   --background-container:#494949;
+  --background-container-inside:2c2c2c;
   --background-button:#1a333c;
 }
 
@@ -40,9 +41,9 @@ html {
 }
 body{
 	margin:0;
-	font-family: 'Nunito', sans-serif;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 16px;
-	line-height: 2.9;
+	line-height: 2;
 	letter-spacing: 0.5px;
 	word-wrap: break-word;
 	font-weight: 400;
@@ -50,7 +51,23 @@ body{
 	color: #e0e0e0;
 }
 
+a:link {
+	color: #D64078;
+	text-decoration: none;
+}
 
+a:visited {
+	color: #D64078;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	background-color: black;
+	color: white;
+}
 /*** 01. info ***/
 
 
@@ -59,7 +76,7 @@ body{
 	height: 20%;
 	background-color:var(--background);
 	position:relative;
-	border:var(--debug-border-1);
+	
 }
 
 .panel_info .container{
@@ -82,11 +99,11 @@ body{
 
 .panel_control {
 	width: 100%;
-	height: 70%;
+	height: 72%;
 	position:relative;
 
 	background-color:var(--background);
-	border:var(--debug-border-1);
+
 }
 
 .panel_control .container{
@@ -103,7 +120,7 @@ body{
 	
 	padding: 10px 10px 10px 10px;
 	
-	background-color: var(--background-container);
+	
 }
 .panel_control .container .control{
 	width: 30%;
@@ -118,31 +135,107 @@ body{
 	clear: none;
 	
 	padding: 10px 10px 10px 10px;
-	
+	border-radius:5px;
 	background-color: var(--background-container);
 }
-.panel_control .container .control .panel_1{
+.panel_control .container .control  .panel_1{
 	width: 100%;
 	height: 30%;
-	
-	background-color: var(--background-container);
-	border:var(--debug-border-2);
+
+	background-color: var(--background-container-inside);
+
+}
+.panel_control .container .control  .panel_1 .panel_form1{
+	width: 100%;
+	height: 100%;
+	display: -webkit-flex;
+	display: flex;  
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	align-content:space-around;
+	justify-content:space-around;
+	text-align:center;
+	background-color: var(--background-container-inside);
+
+}
+.panel_control .container .control .panel_1 [class^="lable_input"]{
+	width: 40%;
+	height: 20%;
+	float:left;
 }
 
-.panel_control .container .control .panel_2{
+.panel_control .container .control .panel_1 [class^="gs_input"] {
+	width: 50%;
+	height: 20%;
+	
+	float:right;
+	background-color: #cccccc;
+	
+}
+
+.panel_control .container .control .panel_1 .gs_input1{
+
+}
+.panel_control .container .control .panel_1 .gs_input2{
+
+}
+.panel_control .container .control .panel_1 .gs_input3{
+
+}
+
+.panel_control .container .control .panel_2 {
 	width: 100%;
 	height: 30%;
+
+	background-color: var(--background-container-inside);
 	
-	background-color: var(--background-container);
-	border:var(--debug-border-2);
 }
+
+.panel_control .container .control .panel_2 .panel_form2{
+	width: 100%;
+	height: 100%;
+	display: -webkit-flex;
+	display: flex;  
+	-webkit-flex-flow: column wrap;
+	flex-flow: column wrap;
+	align-content:center;
+	justify-content:center;
+	text-align:center;
+	
+	background-color: var(--background-container-inside);
+	
+}
+
+.panel_control .container .control .panel_2 .panel_form2  [class^="gs_button"]{
+	width: 40%;
+	height: 30%;
+	cursor: pointer;
+	border-radius:5px;
+
+	-webkit-transition:  0.3s ease-in-out;
+	   -moz-transition:  0.3s  ease-in-out;
+	    -ms-transition:  0.3s  ease-in-out;
+	     -o-transition:  0.3s  ease-in-out;
+	        transition:  0.3s  ease-in-out;
+}
+
+.panel_control .container .control .panel_2 [class^="gs_button"]:hover{
+	width: 40%;
+	height: 30%;
+	border-radius:5px;
+	opacity:0.7;
+	background-color:#aaaaaa;
+	
+}
+
+
 .panel_control .container .control .panel_3{
 	width: 100%;
 	height: 30%;
 	
 	
-	background-color: var(--background-container);
-	border:var(--debug-border-2);
+	background-color: var(--background-container-inside);
+	
 }
 
 /*** 03. database table ***/
@@ -153,22 +246,28 @@ body{
 	height: 100%;
 	
 	position:relative;
-	
+	border-radius:5px;
 	background-color: var(--background-container);
-	border:var(--debug-border-2);
+	
 }
 
 
 
 /*** 01. footer ***/
 footer{
-	width: 100%;
-	height: 10%;
 	position: absolute;
-	bottom:0px;
-	padding: 10px 10px 10px 10px;
-	
-	background-color: #04081f;
-	
-	overflow:hidden;
+	bottom: 0;
+	width: 100%;
+	height: 8%;   /* footer */
+
+	display: block;
+	text-align: center;
+	overflow: hidden;
+	background-color: #333;
+	color: white;
+	padding: 1em;
 }
+#footer span {
+	height: 1em;
+}
+

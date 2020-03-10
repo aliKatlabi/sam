@@ -42,7 +42,7 @@ html {
 }
 body{
 	margin:0;
-	font-family: 'Nunito', sans-serif;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 16px;
 	line-height: 2.9;
 	letter-spacing: 0.5px;
@@ -50,6 +50,23 @@ body{
 	font-weight: 400;
 	background-color: #020312;
 	color: #e0e0e0;
+}
+a:link {
+	color: #D64078;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #D64078;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	background-color: black;
+	color: white;
 }
 
 
@@ -60,7 +77,7 @@ body{
 	width: 100%;
 	height: 20%;
 	position:relative;
-	border:1px solid yellow;
+	border-bottom:4px dotted black;
 }
 
 .panel_info .container{
@@ -98,11 +115,10 @@ body{
 	display: flex;  
 	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
-
-	justify-content: space-between;
-	clear: none;
-	
-	padding: 10px 10px 10px 10px;
+	align-content: space-around;
+	justify-content: space-around;
+	border-radius:5px;
+	padding: 20px 10px 10px 10px;
 	
 	background-color: var(--background-container);
 	/*border:var(--debug-border-2);*/
@@ -110,12 +126,18 @@ body{
 	
 }
 .panel_upload .container .dragdrop_area{
+
 	
+	font-size:30px;
+	line-height:5.1;
+	opacity:0.5;
+	letter-spacing: 11px;
 	width: 56%;
 	height: 100%;
 	background-color: #0f1316;
-	outline:1px solid #0f1316;
-	
+	border:1px solid #0f1316;
+	border-radius:5px;
+	text-align:center;
 	-webkit-transition: all .6s ease;
 	   -moz-transition: all .6s ease;
 	    -ms-transition: all .6s ease;
@@ -123,10 +145,12 @@ body{
 	        transition: all .6s ease;
 	
 }
+
 .panel_upload .container .dragdrop_area:hover{
+
 	background-color: #0f131f;
 	
-	outline:1px solid white;
+	border:5px dashed #555555;
 
 }
 
@@ -141,18 +165,20 @@ body{
 	flex-flow: column wrap;
 	
 	align-content:space-between;
+	justify-content:space-between;
 	
 	float:left;
 	text-align:center;
 
 }
 
-.panel_upload .container .control .submit_button{
-	margin:auto;
-	width: 30%;
-	height: 40%;
+.panel_upload .container .control [class^="button"]{
+	margin:2px;
+	width: 20%;
+	height: 45%;
 	float:left;
 	color: white;
+	border-radius:55px;
 	background-color: var(--background-button);
 	border:var(--debug-border-3);
 	cursor: pointer;
@@ -163,34 +189,28 @@ body{
 	        transition: all .3s ease;
 
 }
-.panel_upload .container .control .upload_button{
-	
-	margin:auto;
-	width: 30%;
-	height: 40%;
-	float:left;
-	color: white;
-	background-color: var(--background-button);
-	border:var(--debug-border-3);
 
-	cursor: pointer;
-	transition: 0.3s;
-}
+.panel_upload .container .control [class^="button"]:hover {opacity: 0.6;}
 
-.upload_button:hover {opacity: 0.6;}
-.submit_button:hover {opacity: 0.6;}
 
 
 .panel_upload .container .control .input{
-	margin:auto;
-	width: 60%;
-	height: 30%;
-	color: white;
-	float:left;
-	background-color: var(--background-button);
+	
+	width: 40%;
+	height: 20%;
+	color: black;
+
+	background-color: #bbbbbb;
 	border:var(--debug-border-3);
 }
+.panel_upload .container .control [class^="lable"]{
 
+	float:left;
+	width: 30%;
+	height: 25%;
+	color: #ffffff;
+	
+}
 /*** 01. query ***/
 .panel_query {
 	
@@ -237,16 +257,17 @@ body{
 	-webkit-flex-flow: column wrap;
 	flex-flow: column wrap;
 
-	align-content:space-between;
+	align-content:space-around;
+	justify-content:space-around;
 }
 .panel_query .container .right .query_control .query_button{
 	
 	position: relative;
 	background-color: var(--background-button);
 	width: 60%;
-	height: 35%;
+	height: 32%;
 	border-radius: 55px;
-
+	
 	margin:auto;
 	
 	-webkit-transition:  1s ease-in-out;
@@ -255,24 +276,32 @@ body{
 	     -o-transition:  1s ease-in-out;
 	        transition:  1s ease-in-out;
 	cursor: pointer;
-	
+	border:var(--debug-border-3);
 }
 .panel_query .container .right .query_control .query_button:hover{
 	
-	background-color:#1a3314;
+	background-color:#555555;
 	opacity:0.4;
 	border:2px dashed black;
 	
 
 }
-.panel_query .container .right .query_control .query_input{
-	position: relative;
-	background-color: var(--background-button);
+.panel_query .container .right .query_control .lable{
 	
 	width: 60%;
-	height: 20%;
-	float:right;
-	margin:auto;
+	height: 17%;
+	margin-top:50px;
+	margin-left:10px;
+}
+
+.panel_query .container .right .query_control .query_input{
+	
+	background-color: #bbbbbb;
+	
+	width: 60%;
+	height: 15%;
+	margin-bottom:50px;
+	border:#ffffff;
 }
 
 /*** 01. left query ***/
@@ -286,7 +315,7 @@ body{
 	
 	border:var(--debug-border-2);
 }
-.panel_query .container .left [class|="q_result_area"]{
+.panel_query .container .left [class^="q_result_area"]{
 	margin: 20px 0 10px 0;
 	margin: auto;
 	width: 50%;
@@ -308,13 +337,20 @@ body{
 /*** 01. footer ***/
 
 footer{
-	width: 100%;
-	height: 10%;
 	position: absolute;
-	bottom:0px;
-	padding: 10px 10px 10px 10px;
-	
-	background-color: #04081f;
-	
-	overflow:hidden;
+	bottom: 0;
+	width: 100%;
+	height: 10%;   /* footer */
+
+	display: block;
+	text-align: center;
+	overflow: hidden;
+	background-color: #333;
+	color: white;
+	padding: 1em;
 }
+#footer span {
+	height: 1em;
+}
+
+

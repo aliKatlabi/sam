@@ -41,28 +41,28 @@
 					<!-- /img 
 					<img src = "images/drop_text.jpg"> </img>
 					-->
+					Drag and Drop here
 				</div>
-				<div class="control">
-					<div class="submit_button" style="order: 2">
-						submit 
-					</div>
-					<div class="upload_button" style="order: 1">
-						upload 
-					</div>
-					
-					<div class="input" style="order: 3">
-						input 
-					</div>
-					<div class="input" style="order: 4">
-						input 
-					</div>
-					<div class="input" style="order: 5">
-						input 
-					</div>
-					
-				</div>
+				
+				<form class="control" >
+							
+					<input type="button" onclick="alert('Hello World!')" value="upload" class="button_upload" >
+						
+					<input type="submit" value="Submit" class="button_submit" >
+				
+					<label for="fname" class="lable">first name</label>
+				  
+					<input type="text" id="fname" name="fname" class="input" > </input> 
+				 
+					<label for="lname" class="lable"> last name </label>
+				 
+					<input type="text" id="lname" name="lname " class="input" > </input> 
+				  
+						
+				</form>
 			</div>
 	</div>
+	
 	<!-- upload -->
 	
 	
@@ -76,19 +76,10 @@
 			
 				<div class="q_result_area" >
 				
-									result area
+									generated ID code and grade area
 					
 				</div>
-				<div class="q_result_area">
 				
-									result area
-					
-				</div>
-				<div class="q_result_area">
-					
-									result area
-					
-				</div>
 			
 			</div>
 			
@@ -97,23 +88,19 @@
 		<!-- right -->
 		<div class="right" >
 				
-			<div class="query_control">
+			<form  class="query_control">
 				
 				<div style="display: flex;height:100%;width:30%;justify-content:center">
-					<div class ="query_button"> </div>
+					
+					<input type="submit" onclick="alert('Hello World!')" value="Query" class="query_button" >
+
 				</div>	
 				
-				<div class="query_input" style="order: 3">
-						input 
-				</div>
-				<div class="query_input" style="order: 4">
-						input 
-				</div>
-				<div class="query_input" style="order: 5">
-						input 
-				</div>			
-				
-			</div>
+				<label for="idcode" class="lable"> Use your given id code </label>
+				 
+				<input type="text" id="idcode" name="idcode " class="query_input" > </input> 
+				  
+			</form>
 		</div>
 		<!-- /right -->
 		
@@ -125,24 +112,7 @@
 	
 	<!-- Footer -->
 	<footer >
-			<div class="panel_footer">
-				<div class="container">
-					<div class="footer_inner">
-						<div class="left">
-							<p><a href="https://www.templateshub.net" target="_blank">Templates Hub</a></p>
-						</div>
-						<div class="right">
-							<ul>
-								<li><a href="#"><i class="xcon-facebook"></i></a></li>
-								<li><a href="#"><i class="xcon-twitter"></i></a></li>
-								<li><a href="#"><i class="xcon-linkedin"></i></a></li>
-								<li><a href="#"><i class="xcon-instagram"></i></a></li>
-								<li><a href="#"><i class="xcon-behance"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
+		<span>&copy; 2020 Ali katlabi. Content is licensed under the <a href="https://creativecommons.org/publicdomain/mark/1.0/">Public Domain</a>.</span>
 		</footer>
 		<!-- /Footer -->
 	
