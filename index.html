@@ -44,19 +44,19 @@
 					Drag and Drop here
 				</div>
 				
-				<form class="control" >
+				<form action="server/student_update.php"  method="post" class="control">
 							
-					<input type="button" onclick="alert('Hello World!')" value="upload" class="button_upload" >
+					<input type="button" onclick="alert('Hello World!')" value="upload" class="button_upload" > </input> 
 						
-					<input type="submit" value="Submit" class="button_submit" >
+					<input type="submit"  value="Submit" class="button_submit" > </input> 
 				
-					<label for="fname" class="lable">first name</label>
+					<label for="name" class="lable">Name</label>
 				  
-					<input type="text" id="fname" name="fname" class="input" > </input> 
+					<input type="text" id="name" name="name" class="input" > </input> 
 				 
-					<label for="lname" class="lable"> last name </label>
+					<label for="NCode" class="lable">Neptun Code</label>
 				 
-					<input type="text" id="lname" name="lname " class="input" > </input> 
+					<input type="text" id="NCode" name="NeptunCode" pattern="[0-9A-Za-z]{6}" class="input"  > </input> 
 				  
 						
 				</form>
@@ -120,9 +120,7 @@
 	<!-- /Wrapper All -->	
 
 <!-- Scripts -->
-<script src="js/jquery.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/init.js"></script>
+
 <!-- /Scripts -->
 
 
