@@ -107,7 +107,7 @@ a:active {
 	
 }
 
-.panel_upload .container{
+.panel_upload .container {
 	width: 100%;
 	height: 100%;
 	position: relative;
@@ -125,14 +125,11 @@ a:active {
 	
 	
 }
+
 .panel_upload .container .dragdrop_area{
 
 	
-	font-size:30px;
-	line-height:5.1;
-	opacity:0.5;
-	letter-spacing: 11px;
-	width: 56%;
+	width: 40%;
 	height: 100%;
 	background-color: #0f1316;
 	border:1px solid #0f1316;
@@ -145,38 +142,52 @@ a:active {
 	        transition: all .6s ease;
 	
 }
+.panel_upload .container .dragdrop_area p{
+	line-height:5.1;
+	font-weight: normal;
+	opacity:0.7;
+	letter-spacing: 9px;
+	margin-top:0;
+	font-size:30px;
+	line-height: 50px;
+    color: darkslategray;
+	
+}
+.panel_upload .container .dragdrop_area #upload{
+	opacity:0.7;
+	margin:auto;
+}
 
 .panel_upload .container .dragdrop_area:hover{
 
 	background-color: #0f131f;
 	
-	border:5px dashed #555555;
+	border:1px dashed #555555;
 
 }
 
 .panel_upload  .container .control{
 
-	width: 40%;
+	width: 30%;
 	height: 100%;
 	
 	display: -webkit-flex;
 	display: flex;  
-	-webkit-flex-flow: column wrap;
-	flex-flow: column wrap;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
 	
 	align-content:space-between;
 	justify-content:space-between;
 	
-	float:left;
 	text-align:center;
 
 }
 
 .panel_upload .container .control [class^="button"]{
 	margin:2px;
-	width: 20%;
-	height: 45%;
-	float:left;
+	width: 30%;
+	height: 35%;
+	float:right;
 	color: white;
 	border-radius:55px;
 	background-color: var(--background-button);
@@ -190,16 +201,18 @@ a:active {
 
 }
 
-.panel_upload .container .control [class^="button"]:hover {opacity: 0.6;}
+.panel_upload .container .control [class^="button"]:hover{
+	opacity: 0.6;
+	}
 
 
 
-.panel_upload .container .control .input{
+.panel_upload .container .control .input {
 	
-	width: 40%;
+	width: 50%;
 	height: 20%;
 	color: black;
-
+	float:left;
 	background-color: #bbbbbb;
 	border:var(--debug-border-3);
 }
@@ -209,6 +222,7 @@ a:active {
 	width: 30%;
 	height: 25%;
 	color: #ffffff;
+	text-align:start;
 	
 }
 /*** 01. query ***/
@@ -312,8 +326,8 @@ a:active {
 	position: relative;
 	
 	align-content: flex-end;
-	
 	border:var(--debug-border-2);
+	
 }
 .panel_query .container .left [class^="q_result_area"]{
 	margin: 20px 0 10px 0;
