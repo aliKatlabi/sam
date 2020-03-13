@@ -34,36 +34,35 @@
 	<!-- /info -->
 	
 	<!-- upload -->
-	<div class="panel_upload">
+	<div class="panel_upload" >
 	
-			<div class="container">
+			<div class=" ">
 			
+				<form  action="service/student_update.php"  method="POST" enctype="multipart/form-data" class="container">
+					
+					<div class="dragdrop_area" >
+						<p>Drag and Drop </p>
 				
-				<div class="dragdrop_area" >
-				<p>Drag and Drop </p>
+			
+						<input type="file" name="file" id="upload">
+					
+						
+					</div>
+					<div class="control" >
+								
+						<input type="text" id="NeptunCode" name="NeptunCode" pattern="[0-9A-Za-z]{6}" class="input"  > </input> 
+						
+						<label for="NeptunCode" class="lable">Neptun Code</label>
+					 
+						
+						<input type="text" id="name" name="name" class="input" > </input> 
+						
+						<label for="name" class="lable">Student Name</label>
+						
+						
+						<input type="submit"  value="Submit" class="button_submit" > </input> 
+					</div>
 				
-				<input type="file" name="file" id="upload">
-					<!-- 
-					<input type="file" name="file" id="file">
-					-->
-					
-					
-				</div>
-				<form class="control" action="server/student_update.php"  method="post" >
-							
-					<input type="text" id="NeptunCode" name="NeptunCode" pattern="[0-9A-Za-z]{6}" class="input"  > </input> 
-					
-					<label for="NeptunCode" class="lable">Neptun Code</label>
-				 
-					
-					<input type="text" id="name" name="name" class="input" > </input> 
-					
-					<label for="name" class="lable">Student Name</label>
-					
-					
-					<input type="submit"  value="Submit" class="button_submit" > </input> 
-				
-					
 				</form>
 				
 			</div>
@@ -73,7 +72,7 @@
 	
 	
 	<!-- query -->
-	<div class="panel_query">
+	<div class="panel_query" >
 	
 		<div class="container">
 			<!-- left -->
