@@ -38,29 +38,29 @@
 	
 			<div class=" ">
 			
-				<form  action="service/student_update.php"  method="POST" enctype="multipart/form-data" class="container">
+				<form  method="POST" enctype="multipart/form-data" class="container" id="form_submit">
 					
 					<div class="dragdrop_area" >
 						<p>Drag and Drop </p>
 				
 			
-						<input type="file" name="file" id="upload">
+						<input type="file" name="file" id="file_id"> </input> 
 					
 						
 					</div>
 					<div class="control" >
 								
-						<input type="text" id="NeptunCode" name="NeptunCode" pattern="[0-9A-Za-z]{6}" class="input"  > </input> 
+						<input type="text" name="NeptunCode" pattern="[0-9A-Za-z]{6}" class="input"  id="NP_input"> </input> 
 						
 						<label for="NeptunCode" class="lable">Neptun Code</label>
 					 
 						
-						<input type="text" id="name" name="name" class="input" > </input> 
+						<input type="text"  name="name" class="input" id="name_input"> </input> 
 						
 						<label for="name" class="lable">Student Name</label>
 						
 						
-						<input type="submit"  value="Submit" class="button_submit" > </input> 
+						<input type="button"  value="submit" class="button_submit" onclick=service_submit()> </button> 
 					</div>
 				
 				</form>
@@ -79,10 +79,8 @@
 		
 			<div class="left" >
 			
-				<div class="q_result_area" >
-				
-									generated ID code and grade area
-					
+				<div class="q_result_area" id="q_res">
+									
 				</div>
 				
 			
@@ -125,6 +123,7 @@
 	<!-- /Wrapper All -->	
 
 <!-- Scripts -->
+<script src="js/user.js"></script>
 
 <!-- /Scripts -->
 

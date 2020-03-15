@@ -240,11 +240,12 @@ a:active {
 
 /*** 03. database table ***/
 
-.panel_control .container .database_table{
+.panel_control .container .database{
 	
-	width: 65%;
+	width: 68%;
 	height: 100%;
 	
+	padding:10px 10px 10px 10px;
 	position:relative;
 	border-radius:5px;
 	background-color: var(--background-container);
@@ -252,6 +253,42 @@ a:active {
 }
 
 
+.panel_control .container .database .db_container{
+	
+	width: 100%;
+	height: 100%;
+	position:relative;
+	border-radius:5px;
+
+	border-color:var(--debug-border-3);
+	
+}
+
+.panel_control .container .database .db_container .db_table{
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #dddddd;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 10px;
+	line-height: 2;
+	letter-spacing: 0.5px;
+	word-wrap: break-word;
+	font-weight: 200;
+	background-color: var(--background-container-inside);
+	color: white;
+
+	
+}
+
+.panel_control .container .database .db_container .db_table th , td {
+	resize:horizontal; 
+	overflow:auto;
+	border: 1px solid #dddddd;
+	text-align: left;
+}
+.panel_control .container .database .db_container .db_table tr:nth-child(even){
+	background-color: #dddddd;
+}
 
 /*** 01. footer ***/
 footer{
