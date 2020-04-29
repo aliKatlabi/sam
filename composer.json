@@ -13,11 +13,7 @@
             "email": "alikatlabi90@gmail.com",
             "homepage": "http://alikatlabi.web.elte.hu",
             "role": "Developer"
-        }],
-	"autoload": {
-        "psr-0": { 
-            "SRC": "service/"
-        }
-	}
+        }]
+
 	
 } 
