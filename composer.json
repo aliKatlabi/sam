@@ -1,9 +1,6 @@
 {
     "name":"thesis_project/thesis_project-php",
 	"homepage": "http://alikatlabi.web.elte.hu/Thesis_project",
-	"require": {
-        "monolog/monolog": "1.0.*"
-    },
 	"description": "Theses Project",
 	"license": "Apache-2.0",
 	"authors": [
