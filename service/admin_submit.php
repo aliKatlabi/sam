@@ -1,74 +1,117 @@
 <?php
 
 include 'utiles.php';
+include 'connection_info.php';
+include 'queries_par.php';
+include 'BlockChain.php';
 
 
-// admin_submit
 
-// getting the IDcode , grade variables from form
+$grade;
+$idcode= "";
+$ok = true;
 
-// checks the grade in some range OR can be done in HTML
-
-// updating the database row matching the IDcode provided
-
-/* Grade_table columns 
-
-ID Code
-Neptun Code
-Student Name
-Submitted File
-Report
-Date
-Time  
-
-*/
-
-//
-
-$conn = mysqli_connect($servername,$username,$password,$dbname);
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+	if(empty($_POST["Grade"])){
+		$ok = false;
+		admin_logger("Grade Code is required");
+	}else{
+		$grade = $_POST["Grade"];
+	}
+	if(empty($_POST["IDCode"])){
+		$ok = false;
+		admin_logger("ID code is required");
+	}else{
+		$idcode = validate_input($_POST["IDCode"]);
+		
+		}
 }
 
-$result = mysqli_query($conn,"SELECT * FROM employee");
-?>
+// TODO check the grade's interval 
+// max and min can be set through a config space
+// configuration can be stored in a file 
+// Config can be set as a class Config
+ 
+// Create connection
 
+// algorithem ..
+		// get hash -> isEmpty ?
+		// yes : get row sequence -> prev row seq = row sequence -1 
+		//		 get prev hash -> generate new block (new hash)-> validate Chain
+		//		 UPDATE the row with the new hash , prev hash, grade 
+		
+		// No  : get row sequence -> prev row seq = row sequence -1 
+		//		 get hash -> get prev hash -> generate new block based on new grade and prev hash 
+		//		 validate Block -> good? if not we dont update 
+		
+		
+		// valdation : is the new generated hash equal to the current one 
+		//			 : is the prev hash is the same 
+		
+if($ok){
+		$conn = new mysqli($servername, $username, $password, $dbname);
+		// Check connection
+		if ($conn->connect_error) {
+			//die("<span> <span id='pep'></span> Connection failed: " . $conn->connect_error ."</span><br>");
+			die( $conn->connect_error );
+		}
+		
+		$block = prepareBlock($grade  ,$idcode ,$conn  );
+		
+		if($block == false ){
+			admin_logger("Grade cannot be modified");
+		}else{
+				$seq 		= $block->get_seq(); 
+				$prevh 		= $block->get_prevHash();
+				$hash 		= $block->get_hash();
+				$ts 		= $block->get_timeStamp();
+				
+				
+				$update_sql = "UPDATE `Block_Table` SET Grade ='$grade',
+														Sequence='$seq',
+														Hash = '$hash',
+														Prev_hash='$prevh',
+														timeStamp ='$ts' 	
+								WHERE IDCode = '$idcode' ";
+		
+		
+			if ($conn->query($update_sql) === TRUE) {
+				
+			
+				admin_logger("Record updated successfully");
+				// send email 
+				$email_sql = "SELECT Email FROM `Report_Table` WHERE IDCode = '$idcode' ";
+				
+				$result = $conn->query($email_sql);
+					
+				if ($result->num_rows > 0) {
+					
+					while($row = $result->fetch_assoc()) {
+						$to_email_address = $row["Email"];
+					}
+				} else {
+				
+					admin_logger("0 results");
+				}
+				
+				$message = "Your Assignment has been graded , your Grade is : ".$grade;
+				
+				mail($to_email_address,"Grade Update",$message);
+				
+					admin_logger("Grade is sent by email to : " . $to_email_address);
+			} else {
+				admin_logger(" Error updating record: " . $conn->error);
+				
+			}
+				
+			
+		}
+	
 
-<link rel="stylesheet" href="admin_style.css">
-
-
-<table class = "db_table">
-	<tr>
-		<th>ID Code</th>
-		<th>Neptun Code</th>
-		<th>Student Name</th>
-		<th>Grade</th>
-		<th>Date</th>
-		<th>Time </th>
-		<th>Submitted File</th>
-	</tr>
-<?php
-$i=0;
-while($row = mysqli_fetch_array($result)) {
-if($i%2==0)
-$classname="even";
-else
-$classname="odd";
-?>
-<tr class="<?php if(isset($classname)) echo $classname;?>">
-<td><?php echo $row["userid"]; ?></td>
-<td><?php echo $row["first_name"]; ?></td>
-<td><?php echo $row["last_name"]; ?></td>
-<td><?php echo $row["city_name"]; ?></td>
-<td><?php echo $row["email"]; ?></td>
-<td><a href="update-process.php?userid=<?php echo $row["userid"]; ?>">Update</a></td>
-</tr>
-<?php
-$i++;
-}
-?>
-</table>
+		$conn->close();
+		flush();
+ }
 
 
 

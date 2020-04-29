@@ -6,9 +6,11 @@
 
 01. Intro
 02. info
-02. control
-03. database_table 
-04. footer
+03.settings
+02. panel control
+	- control
+	- database_table 
+03. footer
 
 ------------------------------------------------------------------- */
 :root{
@@ -68,14 +70,40 @@ a:active {
 	background-color: black;
 	color: white;
 }
-/*** 01. info ***/
+
+[class^="gs_input"]{
+	
+	
+	height:30px;
+	width:170px;
+	border-radius:7px;
+	
+	background-color: #bbbbbb;
+	
+	border:#ffffff;
+	
+}
+[class^="gs_button"]{
+	
+	height:30px;
+	width:100px;
+	border-radius:7px;
+	
+	background-color: #bbbbbb;
+	
+	border:#ffffff;
+}
+
+/*** ..............01. panel_info ...................***/
 
 
 .panel_info {
-	width: 100%;
-	height: 20%;
-	background-color:var(--background);
 	position:relative;
+	width:100%;
+
+	height: 70px;
+	background-color:var(--background);
+	
 	
 }
 
@@ -94,188 +122,420 @@ a:active {
 .panel_info .container .text_area .inf{
 	
 }
+.panel_info .container .menu_area{
+	width: 50%;
+	height: 100%;
+	
+}
+.panel_info .container .menu_area .settings_menu{
+	cursor: pointer;
+	width: 20%;
+	height: 100%;
+	position:absolute;
+	left:40px;
+	top:10px;
+	background-color: var(--background-container);
 
-/*** 02. control ***/
+	
+}
+.panel_info .container .menu_area .settings_menu i{
+	margin:auto;
+	display:block;
+	font-size:36px;
+}
+
+
+/*** .............. setting-sidebar ...................***/
+#main{
+	/*
+  transition: margin-left .5s;
+  padding: 20px;
+  */
+}
+.settings {
+  height: 100%;
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  right: 0;
+  background-color: #111;
+  overflow: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+.settings .setting_form{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  text-align:start;
+
+  
+}
+
+.settings .setting_form  .lable_deadline{
+
+	margin-left:31px;
+	display:block;
+	height:10px;
+	width:130px;
+	font-weight:bold;
+	color: #a10021;
+	font-size:11px;
+
+	letter-spacing:9px;
+}
+
+
+.settings .setting_form .options{
+	margin-top:15px; 
+	margin-bottom:25px;
+	margin-left:15px;
+	margin-right:15px;
+	display:block;
+	height:30px;
+	width:150px;
+	border-radius:7px;
+	background-color: #bbbbbb;
+	border:#ffffff;
+
+}
+
+
+.settings .setting_form [class^="set_"] {
+	margin-top:15px; 
+	margin-bottom:25px;
+	margin-left:15px;
+	margin-right:15px;
+
+    display:block;
+	height:30px;
+	width:150px;
+	border-radius:7px;
+	
+	background-color: #bbbbbb;
+	
+	border:#ffffff;
+	
+}
+.settings .save_btn {
+	
+	cursor: pointer;
+	margin-top:45px; 
+	margin-bottom:35px;
+	margin-left:15px;
+	margin-right:15px;
+
+	display:block;
+	height:30px;
+	width:150px;
+	border-radius:7px;
+	
+	background-color: #bbbbbb;
+	
+	border:#ffffff;
+	background-color: var(--background-container);
+}
+
+.settings .closebtn{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/***.............. 02. panel control ........... ***/
 
 .panel_control {
-	width: 100%;
-	height: 72%;
 	position:relative;
-
+	width: 100%;
+	height:100%;
+	
+	min-height:600px;
 	background-color:var(--background);
 
 }
 
 .panel_control .container{
-	width: 100%;
-	height: 100%;
 	position: relative;
-	display: -webkit-flex;
-	display: flex;  
-	-webkit-flex-flow: column wrap;
-	flex-flow: column wrap;
-
-	justify-content: space-between;
-	clear: none;
+	height: 100%;
 	
+	display: grid;
+	grid-gap:10px;
+	border-radius:5px;
 	padding: 10px 10px 10px 10px;
-	
+	line-height: 2;
 	
 }
-.panel_control .container .control{
-	width: 30%;
-	height: 100%;
-	position: relative;
-	display: -webkit-flex;
-	display: flex;  
-	-webkit-flex-flow: row wrap;
-	flex-flow: row wrap;
+/***.............. control ........... ***/
 
-	justify-content: space-between;
-	clear: none;
+.panel_control .container .control{
 	
-	padding: 10px 10px 10px 10px;
-	border-radius:5px;
+	position:relative;
+	width: 400px;
+	min-width:330px;
+	display:grid;
+	grid-gap:10px;
+	
+	padding: 10px 10px 10px 10px ;
+	
+	border-radius:10px;
 	background-color: var(--background-container);
+	
+	
 }
 .panel_control .container .control .control_submit{
+	position:relative;
 	width: 100%;
-	height: 50%;
+	
+	padding: 20px 10px 10px 10px ;
+	border-radius:5px;
+	grid-row-start: 2;
+	grid-row-end: 3;
 
+	grid-column-start: 1;
+	grid-column-end: 2;
+	
+	
 	background-color: var(--background-container-inside);
 
 }
 .panel_control .container .control  .control_submit .panel_form1{
+	position:relative;
 	width: 100%;
-	height: 100%;
-	display: -webkit-flex;
-	display: flex;  
-	-webkit-flex-flow: row wrap;
-	flex-flow: row wrap;
-	padding: 40px 40px 40px 40px ;
-	align-content:space-between;
-	justify-content:space-between;
-	text-align:center;
+	
+	display:grid;
+	grid-gap:20px;
 	background-color: var(--background-container-inside);
 
 }
-.panel_control .container .control .control_submit [class^="lable_input"]{
-	width: 30%;
-	height: 20%;
+.panel_control .container .control .control_submit .lable_input1{
+	grid-row-start:1;
+	grid-row-end: 2;
+
+	grid-column-start: 1;
+	grid-column-end: 2;
+	
+}
+.panel_control .container .control .control_submit .lable_input2{
+	grid-row-start: 2;
+	grid-row-end: 3;
+	
+	grid-column-start: 1;
+	grid-column-end: 2;
+
+}.panel_control .container .control .control_submit .lable_input3{
+	grid-row-start: 3;
+	grid-row-end: 4;
+	
+	grid-column-start:1;
+	grid-column-end: 2;
 	
 }
 
-.panel_control .container .control .control_submit [class^="gs_input"] {
-	width: 50%;
-	height: 20%;
-	
-	background-color: #cccccc;
-	
-}
 
 .panel_control .container .control .control_submit .gs_input1{
-
+	grid-row-start:1;
+	grid-row-end: 2;
+	
+	grid-column-start:2;
+	grid-column-end: 5;
 }
 .panel_control .container .control .control_submit .gs_input2{
-
+	grid-row-start: 2;
+	grid-row-end: 3;
+	
+	grid-column-start:2;
+	grid-column-end: 5;
 }
-.panel_control .container .control .control_submit .gs_input3{
-
+.panel_control .container .control .control_submit .s_button{
+	grid-row-start: 3;
+	grid-row-end: 4;
+	
+	grid-column-start:1;
+	grid-column-end: 2;
 }
 
 .panel_control .container .control .control_query {
+	
+	position:relative;
 	width: 100%;
-	height: 20%;
+	
+	padding: 20px 10px 10px 10px ;
+	
+	border-radius:5px;
 
+	grid-row-start: 1;
+	grid-row-end: 2;
+	
+	grid-column-start: 1;
+	grid-column-end: 2;
+	
+	
 	background-color: var(--background-container-inside);
 	
 }
 
 .panel_control .container .control .control_query .panel_form2{
-	width: 100%;
-	height: 100%;
-	display: -webkit-flex;
-	display: flex;  
-	-webkit-flex-flow: column wrap;
-	flex-flow: column wrap;
-	align-content:center;
-	justify-content:center;
-	text-align:center;
 	
+	height: 100%;
+	
+	display: grid;
 	background-color: var(--background-container-inside);
 	
 }
 
-.panel_control .container .control .control_query .panel_form2  [class^="gs_button"]{
-	width: 40%;
-	height: 30%;
+.panel_control .container .control .control_query .panel_form2 .gs_button1{
+
 	cursor: pointer;
 	border-radius:5px;
-
+	grid-column:1/2;
+	grid-row:1/2;
+	margin:auto;
 	-webkit-transition:  0.3s ease-in-out;
 	   -moz-transition:  0.3s  ease-in-out;
 	    -ms-transition:  0.3s  ease-in-out;
 	     -o-transition:  0.3s  ease-in-out;
 	        transition:  0.3s  ease-in-out;
 }
+.panel_control .container .control .control_query .panel_form2  .queries{
+	margin:auto;
+	grid-column:2/3;
+	grid-row:1/2;
+	height:30px;
+	width:170px;
+	border-radius:7px;
+	
+	background-color: #bbbbbb;
+	
+	border:#ffffff;
+
+}
 
 .panel_control .container .control .control_query [class^="gs_button"]:hover{
-	width: 40%;
-	height: 30%;
+
 	border-radius:5px;
 	opacity:0.7;
 	background-color:#aaaaaa;
 	
 }
 
+/*** .............. logger-sidebar ...................***/
 
-.panel_control .container .control .panel_3{
-	width: 100%;
-	height: 20%;
+.panel_control .container .control .logger {
+	position: relative;
+	width: 100%; 
+	max-height:180px;
+	height:180px;
+	background-color: #111;
+	overflow-x:auto;
+	padding-top: 10px; 
+	transition: 0.5s; 
+	border-radius:5px;
+ 	grid-row: 3/6;
 	
-	
-	background-color: var(--background-container-inside);
+	grid-column: 1/2;
+	line-height: 1.8;
 	
 }
 
-/*** 03. database table ***/
+.panel_control .container .control .logger .loggertxt{
+	overflow-x:auto;
+	position: relative;
+	width: 100%; 
+	height: 100%;
+	top: 0; 
+	left: 0;
+	
+	transition: 0.3s;
+	font-size: 12px;
+	text-align:center;
+}
+
+.panel_control .container .control .logger span{
+
+	width:10px;
+	font-size:13px;
+	text-decoration: none;
+	color: #818181;
+	color:green;
+}
+
+.panel_control .container .control .logger .closebtn{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#pep{
+	width:5px;
+	animation: flash 1s infinite;
+	position: relative;
+}
+
+@keyframes flash {
+  from {background-color: white;}
+  to {background-color: black;}
+}
+
+/***.............. database table  ........... ***/
+
 
 .panel_control .container .database{
 	
-	width: 68%;
-	height: 100%;
-	
-	padding:10px 10px 10px 10px;
 	position:relative;
-	border-radius:5px;
-	background-color: var(--background-container);
+	height: 100%;
+	width:900px;
+	max-width:900px;
+	min-width:800px;
 	
+	grid-column:3/5;
+	grid-row: 1/2;
+	padding:10px 10px 10px 10px;
+
+	border-radius:10px;
+	background-color: var(--background-container);
+	overflow: auto;
+	
+	display:grid;
 }
 
 
 .panel_control .container .database .db_container{
-	
-	width: 100%;
-	height: 100%;
 	position:relative;
+	width: 100%;
+	height: 90%;
+	
 	border-radius:5px;
+	background-color: var(--background-container-inside);
+	
+	
+	grid-column:1/2;
 
-	border-color:var(--debug-border-3);
+	grid-row:2/19;
 	
 }
-
 .panel_control .container .database .db_container .db_table{
-	width: 100%;
+	position:relative;
+	width: 98%;
 	border-collapse: collapse;
 	border: 1px solid #dddddd;
+	margin:auto;
+	
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 10px;
+	font-size: 13px;
 	line-height: 2;
 	letter-spacing: 0.5px;
 	word-wrap: break-word;
 	font-weight: 200;
 	background-color: var(--background-container-inside);
-	color: white;
+	
 
 	
 }
@@ -288,15 +548,37 @@ a:active {
 }
 .panel_control .container .database .db_container .db_table tr:nth-child(even){
 	background-color: #dddddd;
+	color:black;
+	
 }
+.panel_control .container .database .db_container .db_table tr:nth-child(odd){
+	
+	color: white;
+	
+}
+.panel_control .container .database .db_error_log{
+	
+	width: 100%;
+	height: 8%;
+	position:relative;
+	border-radius:5px;
+	color:white;
+	background-color: var(--background-container-inside);
+	border-color:var(--debug-border-1);
+	
+}
+
+
 
 /*** 01. footer ***/
 footer{
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	width: 100%;
-	height: 8%;   /* footer */
-
+	height: 40px;
+	line-height: 1;
+	font-size:14px;
+	
 	display: block;
 	text-align: center;
 	overflow: hidden;
@@ -308,3 +590,80 @@ footer{
 	height: 1em;
 }
 
+/********************* RESPONSIVE *********************/
+
+@media screen and (max-width: 768px) {
+
+	.panel_control {
+
+		min-height:1000px;
+		
+
+	}
+	.panel_control .container .control{
+	
+	width:100%;
+	max-width:100%;
+	grid-column:1/2;
+
+	grid-row:1/2;
+
+	}
+	
+	.panel_control .container .database{
+	
+	width:100%;
+	min-width:300px;
+	height:500px;
+	grid-column-start:1;
+	grid-column-end:2;
+
+	grid-row-start: 2;
+	grid-row-end: 5;
+	
+	}	
+
+	.panel_control .container .control{
+	
+	
+	
+	
+}
+	.panel_control .container .control .control_submit{
+	
+
+	}
+	.panel_control .container .control  .control_submit .panel_form1{
+
+
+	}
+
+	
+	.panel_control .container .control .control_query {
+		
+		
+		
+	}
+
+
+	
+
+/*** .............. logger-sidebar ...................***/
+
+	.panel_control .container .control .logger {
+		
+		
+	}
+	
+	[class^="gs_input"]{
+	
+	
+	height:30px;
+	width:200px;
+	border-radius:7px;
+	
+	background-color: #bbbbbb;
+	
+	border:#ffffff;
+	}
+}

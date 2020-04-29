@@ -6,108 +6,168 @@
 	<title>teacher interface </title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<!-- Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	
 	<link href="https://fonts.googleapis.com/css?family=Saira:300,400,500,600,700&amp;display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Nunito:300i,400,400i,600,600i,700&amp;display=swap" rel="stylesheet">
 	<!-- /Fonts -->
 	
 	<!-- Styles -->
-    <link rel="stylesheet" href="css/plugins.css">
+
     <link rel="stylesheet" href="css/admin_style.css">
     <link rel="stylesheet" href="css/admin_style_responsive.css">
 	<!-- /Styles -->
 </head>
 <body>
+	<!-- log-sidebar -->
+
+	<!-- /log-sidebar -->
+	
+	<!-- setting-sidebar -->
+	
+	<div  class="settings" id="settings_">
+		<a href="javascript:void(0)" class="closebtn" onclick=closeNav()>&times;</a>
+	 
+		<form method="post" enctype="multipart/form-data"  class="setting_form" id="setting_form_">
+			<div id="form_log" style="overflow:hidden;font-size:10px"></div>
+			
+				<input type="text"  name="subjectcode" class="set_subjectcode" id="subjectcode_" placeholder="subject code" maxlength="5" size="5"> </input> 
+				<input type="text"  name="subjectname" class="set_subjectname" id="subjectname_" placeholder="subject name"></input> 
+			
+				<input type="number" name="mingrade" class="set_mingrade" id="mingrade_" placeholder="min grade"> </input>
+				<input type="number" name="maxgrade" class="set_maxgrade" id="maxgrade_" placeholder="max grade"> </input>
+		
+				<label for="deadline" class="lable_deadline">DEADLINE</label>
+				<input type="date" name="deadline" class="set_deadline" id="deadline_"> </input>
+				
+				
+				 <select name="options" class="options" id="options">
+					<option value="">Select an action:</option>
+					<option value="save">save</option>
+					<option value="update">update</option>
+					<option value="publish">publish</option>
+					<option value="unpublish">unpublish</option>
+					<option value="delete">delete</option>
+				</select>
+				
+				<input type="button"  value="perform" class="save_btn" onclick="service_save_settings()">
+		
+		</form>
+	</div>
+
+	<!-- /setting-sidebar -->
 	<!-- info -->
 	<div class="panel_info">
 	
 		<div class="container">
 			
 			<div class="text_area">
-			
 				<p class="inf"></p>		
 							
 			</div>
+			
 		
+			<div class="menu_area">
+				
+				<div class="settings_menu" onclick="openNav()" >
+					<i class="material-icons" >settings</i>
+				</div>
+			</div>
 		</div>
 	</div>
 	<!-- /info -->
-	
-	<!-- control -->
-	
-	<div class="panel_control">
-	
-		<div class="container">
-			
-			<div class="control">
-			
-				<div class="control_submit"  style="order:2">
-				
-					<form   method="post" enctype="multipart/form-data"  class="panel_form1">
-						
-								<label for="IDcode" class="lable_input1">ID code</label>
-						  
-								<input type="text"  name="IDcode" class="gs_input1" > </input> 
-						 
-								<label for="Grade" class="lable_input2">Grade </label>
-						  
-								<input type="number" id="Grade" name="Grade" class="gs_input2" min="0" max="100" > </input> 
-								
-								<input type="submit" value="Submit" class="gs_input3">
-								
-					</form>
-				</div>
-				<div class="control_query" style="order:1">
-				
-					<form class="panel_form2" >
-				
-					
-						<input type="button" onclick="alert('Hello World!')" value="Query Table" class="gs_button1" >
-						
-					</form>
-				</div>
-				<div class="panel_3" style="order:3">
-				
-				</div>
-			</div>
-	
-	
-	
-	<!-- database table -->
+
+	<div id="main">
+
+		<!-- control -->
 		
-			<div class="database">
-				<div class="db_container">
-					<table class = "db_table">
-						<tr>
-							<th>ID Code</th>
-							<th>Neptun Code</th>
-							<th>Student Name</th>
-							<th>Grade</th>
-							<th>Date</th>
-							<th>Time </th>
-							<th>Submitted File</th>
-						</tr>
-					</table>
+		<div class="panel_control">
+		
+			<div class="container">
+				
+				<div class="control">
+				
+					<div class="control_submit"  style="order:2">
+					
+						<form   method="post" enctype="multipart/form-data"  class="panel_form1" id="panel_form1">
+						
+									<label for="IDcode" class="lable_input1">ID code</label>
+							  
+									<input type="text"  name="IDCode" class="gs_input1" id="idcode_input"> </input> 
+							 
+									<label for="Grade" class="lable_input2">Grade </label>
+							  
+									<input type="number" name="Grade" class="gs_input2" min="0" max="100" id="grade_input"> </input> 
+									
+									<input type="button"  value="Submit" class="gs_button2" onclick=service_submit_info()>
+						</form>
+					</div>
+					
+					<div  class="control_query" style="order:1">
+					
+						<form  method="post" enctype="multipart/form-data" class="panel_form2" id="panel_form2" >
+						
+							 <select name="queries" class="queries" id="queries">
+								<option value="">Select a query:</option>
+								<option value="Grades">Grades</option>
+								<option value="Settings">Settings</option>
+							
+							</select>
+							
+							<input type="button" value="Query" onclick="service_query()" class="gs_button1" >
+						</form>
+					</div>
+					
+					<div  class="logger" id="logger_" style="order:3">
+							
+					 </div >
+				</div>
+				
+		
+		<!-- database table -->
+			
+				<div class="database">
+				
+					<div class="db_container">
+						<table class = "db_table" id="db_table_">
+							<!--
+							<tr>
+								<th>ID Code</th>
+								<th>Neptun Code</th>
+								<th>Student Name</th>
+								<th>Grade</th>
+								<th>Date</th>
+								<th>Time </th>
+								<th>Submitted File</th>
+							</tr>
+							-->
+							
+						</table>
+					</div>
 				</div>
 			</div>
 		</div>
+		<!-- /database table -->
+		
+	<!-- /control -->
+
 	</div>
-	<!-- /database table -->
-	
-<!-- /control -->
 	<!-- Footer -->
 	<footer >
 			<span>&copy; 2020 Ali katlabi. Content is licensed under the <a href="https://creativecommons.org/publicdomain/mark/1.0/">Public Domain</a>.</span>
-		</footer>
+	</footer>
 		<!-- /Footer -->
 	
 </body>
 	<!-- /Wrapper All -->	
 
 <!-- Scripts -->
-
+<script src="js/admin_services.js"></script>
+<script src="js/admin.js"></script>
 <!-- /Scripts -->
 
 

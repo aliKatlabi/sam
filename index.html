@@ -18,12 +18,12 @@
     <link rel="stylesheet" href="css/user_style_responsive.css">
 	<!-- /Styles -->
 </head>
-<body>
+<body  onload=update_info() >
 	<!-- info -->
-	<div class="panel_info">
+	<div class="panel_info" >
 		<div class="container">
 			
-			<div class="text_area">
+			<div class="text_area" id="text_area" >
 			
 				<p class="inf"></p>		
 							
@@ -33,40 +33,29 @@
 	</div>
 	<!-- /info -->
 	
+	<div class="main" >
 	<!-- upload -->
-	<div class="panel_upload" >
-	
+	<div class="panel_upload">
 			<div class=" ">
-			
 				<form  method="POST" enctype="multipart/form-data" class="container" id="form_submit">
-					
 					<div class="dragdrop_area" >
 						<p>Drag and Drop </p>
-				
-			
 						<input type="file" name="file" id="file_id"> </input> 
-					
-						
 					</div>
 					<div class="control" >
-								
-						<input type="text" name="NeptunCode" pattern="[0-9A-Za-z]{6}" class="input"  id="NP_input"> </input> 
+						<label for="NeptunCode" class="lable" id="NP_lable">Neptun Code</label>
+						<input type="text" name="NeptunCode" pattern="[0-9A-Za-z]{6}" class="input"  id="NP_input" required> </input> 
+						<label for="name" class="lable" id="name_lable" >Student Name</label>
+						<input type="text"  name="name" class="input" id="name_input" required> </input> 
+						<label for="Email" class="lable" id="Email_lable" >Email</label>
+						<input type="email"  name="Email" class="input" id="Email_input" required> </input> 
+						<input type="button"  value="Submit" class="button_submit" onclick=service_submit() > </input>
 						
-						<label for="NeptunCode" class="lable">Neptun Code</label>
-					 
-						
-						<input type="text"  name="name" class="input" id="name_input"> </input> 
-						
-						<label for="name" class="lable">Student Name</label>
-						
-						
-						<input type="button"  value="submit" class="button_submit" onclick=service_submit()> </button> 
+					
 					</div>
-				
 				</form>
-				
 			</div>
-	</div>
+		</div>
 	
 	<!-- upload -->
 	
@@ -77,7 +66,7 @@
 		<div class="container">
 			<!-- left -->
 		
-			<div class="left" >
+			<div class="res" >
 			
 				<div class="q_result_area" id="q_res">
 									
@@ -89,19 +78,17 @@
 		<!-- /left -->
 		
 		<!-- right -->
-		<div class="right" >
+		<div class="qur" >
 				
-			<form  class="query_control">
+			<form  method="POST" enctype="multipart/form-data" id="form_query" class="form_query">
 				
-				<div style="display: flex;height:100%;width:30%;justify-content:center">
-					
-					<input type="submit" onclick="alert('Hello World!')" value="Query" class="query_button" >
-
-				</div>	
-				
+			
 				<label for="idcode" class="lable"> Use your given id code </label>
 				 
-				<input type="text" id="idcode" name="idcode " class="query_input" > </input> 
+				<input type="text" id="idcode" name="idcode" class="input" > </input> 
+				
+				<input type="button"  value="Query" class="button_query" onclick=service_query()> </input> 
+
 				  
 			</form>
 		</div>
@@ -110,20 +97,24 @@
 	
 		</div>
 	</div>
-	
+	</div>
 	<!-- /query -->
 	
 	<!-- Footer -->
+	<div style="position:relative;width: 100%;height:60px">
 	<footer >
 		<span>&copy; 2020 Ali katlabi. Content is licensed under the <a href="https://creativecommons.org/publicdomain/mark/1.0/">Public Domain</a>.</span>
 	</footer>
+	</div>
 		<!-- /Footer -->
 	
 </body>
 	<!-- /Wrapper All -->	
 
 <!-- Scripts -->
-<script src="js/user.js"></script>
+<script src="js/user_services.js"></script>
+
+
 
 <!-- /Scripts -->
 
