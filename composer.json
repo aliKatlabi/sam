@@ -1,7 +1,6 @@
 {
-    "name":"Thesis_project/Thesis_project",
-	"type":"web application",
-	"homepage": "http://alikatlabi.web.elte.hu/Thesis_project/",
+    "name":"thesis_project/thesis_project-php",
+	"homepage": "http://alikatlabi.web.elte.hu/Thesis_project",
 	"require": {
         "monolog/monolog": "1.0.*"
     },
