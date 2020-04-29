@@ -1,5 +1,8 @@
 {
     "require": {
         "monolog/monolog": "1.0.*"
-    }
+    },
+	"description": "Theses Project",
+	"license": "Apache-2.0"
+	
 } 
