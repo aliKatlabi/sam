@@ -1,8 +1,22 @@
 {
-    "require": {
+    "name":"Thesis_project/Thesis_project",
+	"type":"web application",
+	"homepage": "http://alikatlabi.web.elte.hu/Thesis_project/",
+	"require": {
         "monolog/monolog": "1.0.*"
     },
 	"description": "Theses Project",
-	"license": "Apache-2.0"
+	"license": "Apache-2.0",
+	"authors": [
+        {
+            "name": "Ali katlabi",
+            "email": "alikatlabi90@gmail.com",
+            "homepage": "http://alikatlabi.web.elte.hu",
+            "role": "Developer"
+        }],
+	"autoload": {
+        "psr-0": { 
+            "SRC": "service/"
+        }
 	
 } 
