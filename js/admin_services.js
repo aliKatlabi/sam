@@ -2,7 +2,8 @@ function service_query() {
 	
 		var f  = document.getElementById("panel_form2"); 
 		var fd = new FormData(f);
-
+		var q  = document.getElementById("queries").value;
+		//alert(q);
 		if (window.XMLHttpRequest) {
             // code for IE7+, Firefox, Chrome, Opera, Safari
             xmlhttp = new XMLHttpRequest();
@@ -20,8 +21,8 @@ function service_query() {
 			}
         };
 		
-        xmlhttp.open("POST","service/admin_query.php",true);
-        xmlhttp.send(fd);
+        xmlhttp.open("GET","service/admin_query.php/?queries="+q,true);
+        xmlhttp.send();
 }
 
 /* function service_query_settings(){

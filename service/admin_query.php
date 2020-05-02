@@ -10,14 +10,15 @@ $ok = true;
 $option="";
 
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
 	
-	if(empty($_POST["queries"])){
+	if(empty($_GET["queries"])){
 		$ok = false;
 		//echo "Please,specify an option to execute!";
 	}else{
 		
-		$option = $_POST["queries"];
+		$option = $_GET["queries"];
+	
 		//admin_logger($option ." option chosen!");
 	}
 	
