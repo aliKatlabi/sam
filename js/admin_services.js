@@ -20,7 +20,7 @@ function service_query() {
 			}
         };
 		
-        xmlhttp.open("POST","service/admin_query.php",true);
+        xmlhttp.open("POST","service/admin_query.php",false);
         xmlhttp.send(fd);
 }
 
@@ -94,7 +94,7 @@ function service_submit_info() {
             }
         };
 		
-		xmlhttp.open("POST","service/admin_submit.php",true);
+		xmlhttp.open("POST","service/admin_submit.php",false);
         xmlhttp.send(fd);
 		
 	}else{
@@ -131,7 +131,7 @@ function service_save_settings() {
             }
         };
 		
-		xmlhttp.open("POST","service/admin_settings.php",true);
+		xmlhttp.open("POST","service/admin_settings.php",false);
         xmlhttp.send(fd);
 	
 	
