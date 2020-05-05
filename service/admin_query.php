@@ -9,7 +9,6 @@ $ok = true;
 
 $option="";
 
-
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
 	
 	if(empty($_GET["queries"])){
@@ -37,12 +36,12 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 									type,
 									Size,
 									Content
-											FROM `Report_Table` 
-											JOIN `Block_Table`  USING (IDCode)
-											JOIN `File_Table` 	USING (IDCode) "
+											FROM `{$GLOBALS['report_table']}` 
+											JOIN `{$GLOBALS['block_table']}`  USING (IDCode)
+											JOIN `{$GLOBALS['file_table']}` 	USING (IDCode) "
 	,
 
-	"Settings" => "SELECT SubjectCode,SubjectName,min,max,deadLine,state FROM `submission_Table`"
+	"Settings" => "SELECT SubjectCode,SubjectName,min,max,deadLine,state FROM `{$GLOBALS['report_table']}`"
 
 	);
 
@@ -56,21 +55,22 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 		if ($conn->connect_error) {
 			die("Connection failed: " . $conn->connect_error);
 		}
-		$Grades 		 = (strcmp($option,"Grades")==0)?true:false;
-		$Settings		 = (strcmp($option,"Settings")==0)?true:false;
-		
-		$Q  = $query_options[$option];
-		
-		
-		if($Grades){
+		{
+			$Grades 		 = (strcmp($option,"Grades")==0)?true:false;
+			$Settings		 = (strcmp($option,"Settings")==0)?true:false;
 			
-			query_table($conn,$Q);
-		}
-		if($Settings){
-			query_setting($conn,$Q);
+			$Q  = $query_options[$option];
 			
+			
+			if($Grades){
+				
+				query_table($conn,$Q);
+			}
+			if($Settings){
+				query_setting($conn,$Q);
+				
+			}
 		}
-	
 		$conn->close();
 
 	}else{
