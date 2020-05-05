@@ -6,6 +6,32 @@ include 'connection_info.php';
 include 'queries_par.php';
 
 
+$notify = array(
+
+        "big_file"=>"Sorry, your file is too large
+						<br>"
+		,
+        "wrong_type"=> "Sorry, only pdf files are allowed
+						<br>"
+		,
+		"exist_file"=>"Failed to update! 
+					  <br>block already reserved
+					  <br>The information you're trying to insert exist! 
+					  <br>"
+		,
+		"fail_update"=>"Failed to update! 
+						<br>"
+		,
+		"succesful_update"=>"block reserved 
+							<br>hurray!! Successfully uploaded! 
+							<br>Your grade will be send to  your 
+							<br>Email address when it's ready
+							<br>Or Keep this ID code to query your grade 
+							<br>"
+							  
+	
+);
+
 /*
 
 This service is ment to be used as a backend service for the purpose of saving user's information and uploading the FILE that 
@@ -27,7 +53,6 @@ it will be used for as a give back a grade corresponding with the it
 //$_FILES["fileToUpload"]["tmp_name"]
 
 
-// TODO : ajax function in (user.js) TO recieve check message and present them in the HTML document 
 	
 				$target_dir = '/data/';
 				$target_file = $target_dir . basename($_FILES["file"]["name"]);
@@ -42,17 +67,18 @@ if (file_exists($target_file)) {
 }else{
 		// Check file size
 	if ($_FILES["file"]["size"] > 5000000) {
-		echo "Sorry, your file is too large <br>";
+		echo $notify['big_file'];
 		$uploadOk = false;
 	}
 	// Allow certain file formats
 	if($FileType != "pdf" and !empty($FileType)) {
-		echo "Sorry, only pdf files are allowed <br>";
+		echo $notify['wrong_type'];
+
 		$uploadOk = false;
 	}
 	// Check if $uploadOk is set to 0 by an error
 	if(empty($_FILES["file"]["tmp_name"])){
-		echo "no file! are you kidding me  !<br>";
+		echo "no file !!<br>";
 		$uploadOk = false;
 	}
 }
@@ -69,8 +95,6 @@ if (!$uploadOk) {
 	{
 			$row = new Report();
 			$file = new DBFile();
-			
-		
 			
 			$ERR = false;
 			$emialErr="";
@@ -99,16 +123,29 @@ if (!$uploadOk) {
 				
 					$row->set_email(validate_input($_POST["Email"]));
 				}
-				$row->set_IDCode(RandomToken(6));
-				$row->set_date(date("Y-m-d"));
-				$row->set_time(date("h:i:s"));
+				//exist($table , $column , $value)
+				//$UId = uniqid ([ string $prefix = "" [, bool $more_entropy = FALSE ]] ) ;
+				$UId = uniqid("", false ) ;
+				// extra procedure for ensuring the uniquness of the IDCode
+				if(!exist("Report_Table" , "IDCode" , $UId )){
+					$row->set_IDCode($UId);
+					
+					$row->set_date(date("Y-m-d"));
+					$row->set_time(date("h:i:s"));
 				
-				$file->set_idcode($row->get_IDCode());
-				$file->set_name($_FILES["file"]["name"]);
-				$file->set_type($_FILES["file"]["type"]);
-				$file->set_size($_FILES["file"]["size"]);
-				$file->set_content($_FILES["file"]["tmp_name"]);
+					$file->set_idcode($row->get_IDCode());
+					$file->set_name($_FILES["file"]["name"]);
+					$file->set_type($_FILES["file"]["type"]);
+					$file->set_size($_FILES["file"]["size"]);
+					$file->set_content($_FILES["file"]["tmp_name"]);
+					
 				
+				}else{
+					echo "you just won the lotary .. try submitting again <br>";
+					$ERR = true;
+				}
+				
+			
 				//move_uploaded_file($file->get_content(), $target_dir);
 			/* 	if (move_uploaded_file($file->get_content(), $target_dir)) {
 					
@@ -120,9 +157,10 @@ if (!$uploadOk) {
 				}
 				 */
 			}
-			if($ERR){
+			
+		if($ERR){
 				echo "not succesful submitting <br>".$nameErr.$emialErr.$npcodeErr;
-			}else{
+		}else{
 				
 			// Create connection
 			$conn = new mysqli($servername, $username, $password, $dbname);
@@ -167,7 +205,7 @@ if (!$uploadOk) {
 					'$file->content'		
 					)";
 			
-		if ($conn->query($file_insert) === TRUE) {
+			if ($conn->query($file_insert) === TRUE) {
 			
 				if ($conn->query($user_insert) === TRUE) {
 					
@@ -177,44 +215,33 @@ if (!$uploadOk) {
 
 						if ($conn->query($block_insert) === TRUE) {
 							
-							 echo "block reserved"."<br>";
-							 echo "hurray!! Successfully uploaded!"."<br>";
-							 echo "Your grade will be send to  your <br>Email address when it's ready"."<br>";
-							 echo "Or Keep this ID code to query your grade"."<br>";
+							 $notify['succesful_update'];
 							 echo "ID CODE : ".$row->IDCode_."<br>";
 					
 
 						} else {
 								
 							 echo "Failed to update block"."<br>";
+							
 						}
 						
 				} else {
-						
-					 echo "Failed to update!"."<br>";
+					 echo $notify['exist_file'];
+					
 				}
 
-		}
+			}
 			flush();
 			$conn->close();
 
 		}
 	}else{
+		echo $notify['fail_update'];
 		echo "Failed to update!"."<br>";
 	}
  }
 
 
-
-$upload_err = array(
-
-        0=>"There is no error, the file uploaded with success",
-        1=>"The uploaded file exceeds the upload_max_filesize directive in php.ini",
-        2=>"The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form",
-        3=>"The uploaded file was only partially uploaded",
-        4=>"No file was uploaded",
-        6=>"Missing a temporary folder"
-);
 
 
 
