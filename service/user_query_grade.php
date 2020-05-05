@@ -52,7 +52,7 @@ if($ERR){
 				}
 			}
 		}else {
-			echo "There is no grade .. <br>try to reach the supervisor"." <br>";
+			echo "The id code is not valid .. <br>Insert a correct id OR reach the supervisor"." <br>";
 		}
 	}
 	

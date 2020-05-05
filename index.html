@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE HTML>
 
 <html>
 <head>
@@ -7,6 +7,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/user_services.js"></script>
+
 	
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Saira:300,400,500,600,700&amp;display=swap" rel="stylesheet">
@@ -15,7 +17,6 @@
 	
 	<!-- Styles -->
     <link rel="stylesheet" href="css/user_style.css">
-    <link rel="stylesheet" href="css/user_style_responsive.css">
 	<!-- /Styles -->
 </head>
 <body  onload=update_info() >
@@ -36,11 +37,11 @@
 	<div class="main" >
 	<!-- upload -->
 	<div class="panel_upload">
-			<div class=" ">
+			<div class="container">
 				<form  method="POST" enctype="multipart/form-data" class="container" id="form_submit">
 					<div class="dragdrop_area" >
 						<p>Drag and Drop </p>
-						<input type="file" name="file" id="file_id"> </input> 
+						
 					</div>
 					<div class="control" >
 						<label for="NeptunCode" class="lable" id="NP_lable">Neptun Code</label>
@@ -49,7 +50,45 @@
 						<input type="text"  name="name" class="input" id="name_input" required> </input> 
 						<label for="Email" class="lable" id="Email_lable" >Email</label>
 						<input type="email"  name="Email" class="input" id="Email_input" required> </input> 
-						<input type="button"  value="Submit" class="button_submit" onclick=service_submit() > </input>
+						
+						<input type="button"  value="Submit" class="button_submit" style="grid-column: 1/2" onclick=service_submit() > 
+						</input>
+						<script>
+							const fileTypes = [
+								  "application/pdf"
+								];
+							function validFileType(file) {
+								  return fileTypes.includes(file.type);
+								}
+							function go(){
+								var input = document.getElementById('file_id');
+								var file = input.files[0];
+								
+								if(validFileType(file)){
+									var log 	= document.getElementById('file_txt');
+									log.innerHTML = file.name;
+								
+								}else{
+								
+									
+									var log 	= document.getElementById('file_txt');
+									log.innerHTML = " NOT SUPPORTED TYPE";
+									input.files[0].clear;
+								}
+								
+								
+							}
+						</script>
+						<div type="button"  value="Upload" class="button_file" style="position:relative;grid-column: 2/3;">
+							<input 	type="file" name="file" id="file_id" 
+									style="width:100%;position:absolute;opacity:0;top:3px;left:3px;cursor:pointer;"
+									accept=".doc,.docx,.pdf"
+									onchange="go()"
+									> Upload </input>
+							
+						</div>
+						<div id="file_txt" style="max-height:30px;overflow:auto;grid-row: 6/7;grid-column: 1/3;"></div>
+						
 						
 					
 					</div>
@@ -112,8 +151,8 @@
 	<!-- /Wrapper All -->	
 
 <!-- Scripts -->
-<script src="js/user_services.js"></script>
 
+<script src="js/logger_worker.js"></script>
 
 
 <!-- /Scripts -->

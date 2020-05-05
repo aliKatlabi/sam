@@ -256,13 +256,8 @@ a:active {
 	margin-top:40px;
 	width: 100px;
 	height: 35px;
-	
 	grid-column:1/4;
-
 	grid-row:5/6;
-
-
-	float:right;
 	color: white;
 	border-radius:7px;
 	background-color: var(--background-button);
@@ -275,6 +270,27 @@ a:active {
 	        transition: all .3s ease;
 
 }
+/* .main .panel_upload .container .control .file_upload:before {
+  content: 'Select some files';
+  display: inline-block;
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.main .panel_upload .container .control .file_upload:hover::before {
+  border-color: black;
+}
+.main .panel_upload .container .control .file_upload:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+} */
 
 .main .panel_upload .container .control [class^="button"]:hover{opacity: 0.6;}
 
@@ -283,9 +299,9 @@ a:active {
 .main .panel_upload .container .control #name_input{grid-row:3/4;}
 .main .panel_upload .container .control #Email_input{grid-row:4/5;}
 
-.main .panel_upload .container .control .input {grid-column: 2/4;}
+/* .main .panel_upload .container .control .input {grid-column: 2/4;}
 
-
+ */
 .main .panel_upload .container .control #NP_lable{grid-row:2/3;}
 .main .panel_upload .container .control #name_lable{grid-row:3/4;}
 .main .panel_upload .container .control #Email_lable{grid-row:4/5;}

@@ -46,6 +46,8 @@ function service_query() {
 			document.getElementById("q_res").style.height = "100%";
 			document.getElementById("q_res").style.padding ="8px 8px 8px 8px";
 			//document.getElementById("q_res").style.borderBottomWidth = "20px";
+			
+			
 			logger(this,37,"q_res");
 		}
   };
@@ -68,7 +70,7 @@ function update_info(){
 	if (this.readyState == 4 && this.status == 200)
 		{
 			
-			logger(this,37,"text_area");
+			 logger(this,37,"text_area");
 		}
   };
 
@@ -109,4 +111,5 @@ function logger(response,speed,elementid)
 		}
 	}
 	
-}
+} 
+
