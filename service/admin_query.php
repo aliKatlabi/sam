@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 											JOIN `{$GLOBALS['file_table']}` 	USING (IDCode) "
 	,
 
-	"Settings" => "SELECT SubjectCode,SubjectName,min,max,deadLine,state FROM `{$GLOBALS['report_table']}`"
+	"Settings" => "SELECT SubjectCode,SubjectName,min,max,deadLine,state FROM `{$GLOBALS['submission_table']}`"
 
 	);
 
