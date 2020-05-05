@@ -13,7 +13,7 @@
 			header('Pragma: public');
 			//header('HTTP/1.1 206 Partial Content');
 			header('Content-Description: File Transfer');
-			header('Content-Type: application/octet-stream');
+			header('Content-Type: application/pdf');
 			header("Content-Disposition: attachment; filename=\"" . $name . "\"");
 			header('Expires: -1');
 			header("Cache-Control: public, must-revalidate, post-check=0, pre-check=0");

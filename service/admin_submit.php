@@ -81,7 +81,7 @@ if($ok){
 			
 				admin_logger("Record updated successfully");
 				// send email 
-				$email_sql = "SELECT Email FROM `Report_Table` WHERE IDCode = '$idcode' ";
+				$email_sql = "SELECT Email FROM `{$GLOBALS['report_table']}` WHERE IDCode = '$idcode' ";
 				
 				$result = $conn->query($email_sql);
 					

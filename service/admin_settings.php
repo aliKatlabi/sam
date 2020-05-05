@@ -76,7 +76,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 $query_options = array(
 
-		"save" => "INSERT INTO `submission_Table`(					`SubjectCode`	, 
+		"save" => "INSERT INTO `{$GLOBALS['submission_table']}`(					`SubjectCode`	, 
 																	`SubjectName`	,
 																	`min`			,
 																	`max`			, 
@@ -90,7 +90,7 @@ $query_options = array(
 							)"
 ,
 
-		"update" => "UPDATE `submission_Table` 
+		"update" => "UPDATE `{$GLOBALS['submission_table']}` 
 					 
 					SET 
 						SubjectName =	'$setting->subjectName' 			,	
@@ -101,13 +101,13 @@ $query_options = array(
 					WHERE SubjectCode = '$setting->subjectCode' "
 ,
 
-		"delete" => " DELETE FROM `submission_Table`
+		"delete" => " DELETE FROM `{$GLOBALS['submission_table']}`
 							WHERE SubjectCode = '$setting->subjectCode'"
 ,
 					
 					
 
-		"publish" => "UPDATE `submission_Table` 
+		"publish" => "UPDATE `{$GLOBALS['submission_table']}` 
 					 
 					 SET 
 						state = 1
@@ -115,13 +115,13 @@ $query_options = array(
 					 WHERE SubjectCode = '$setting->subjectCode' "
 
 ,
-		"unpublish" => "UPDATE `submission_Table` 
+		"unpublish" => "UPDATE `{$GLOBALS['submission_table']}` 
 								 SET 
 									state = 0
 									
 								 WHERE SubjectCode = '$setting->subjectCode' "
 ,
-		"query" => "SELECT SubjectCode FROM `submission_Table` WHERE SubjectCode = '$setting->subjectCode' "
+		"query" => "SELECT SubjectCode FROM `{$GLOBALS['submission_table']}` WHERE SubjectCode = '$setting->subjectCode' "
 
 
 );
@@ -178,7 +178,7 @@ function execute($connect, $op , $qops , $subCode){
 		}
 	}
 	if($update){
-		$ex = exist($connect, $subCode);
+		$ex = subjectnameexist($connect, $subCode);
 		
 		 if($ex){
 			 if ($connect->query($sql_option) === TRUE) {
@@ -210,7 +210,7 @@ function execute($connect, $op , $qops , $subCode){
 	}
 	
 	if($publish){
-		$ex = exist($connect, $subCode);
+		$ex = subjectnameexist($connect, $subCode);
 		
 		if($ex)
 		{
@@ -230,8 +230,7 @@ function execute($connect, $op , $qops , $subCode){
 	}
 	if($unpublish){
 	
-		$ex = exist($connect, $subCode);
-		
+		$ex = subjectnameexist($connect, $subCode);
 		if($ex){
 			if ($connect->query($sql_option) === TRUE) {
 				
@@ -252,9 +251,9 @@ function execute($connect, $op , $qops , $subCode){
 }
 
 
-function exist($c,$code){
+function subjectnameexist($c,$code){
 	
-	$info_sql = "SELECT SubjectName FROM `submission_Table` WHERE SubjectCode='$code'";
+	$info_sql = "SELECT SubjectName FROM `{$GLOBALS['submission_table']}` WHERE SubjectCode='$code'";
 
 	
 	$result = $c->query($info_sql);

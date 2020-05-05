@@ -25,14 +25,14 @@ $block_table= "block_table";
 
 
 
- 
-
 /* 
-$con=mysqli_init(); mysqli_ssl_set($con, NULL, NULL, {ca-cert filename}, NULL, NULL); 
-mysqli_real_connect($con, "secureassignmentmanagerdb.mysql.database.azure.com", "alikatlabi@secureassignmentmanagerdb",
- {your_password}, {your_database}, 3306);
-
+{$GLOBALS['report_table']}
+{$GLOBALS['block_table']}
+{$GLOBALS['file_table']}
+{$GLOBALS['submission_table']}
  */
+
+
 
 
 

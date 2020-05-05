@@ -2,7 +2,7 @@
 
 include 'connection_info.php';
 
-$info_sql = "SELECT SubjectName,min,max,deadLine,state FROM `submission_Table`";
+$info_sql = "SELECT SubjectName,min,max,deadLine,state FROM `{$GLOBALS['submission_table']}`";
 
 		
 $conn = new mysqli($servername, $username, $password, $dbname);

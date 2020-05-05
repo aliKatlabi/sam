@@ -28,7 +28,7 @@ if($ERR){
 	
 }else{
 	
-	$user_query_grade = "SELECT Grade FROM `Block_Table` WHERE IDCode = '$idcode' ";
+	$user_query_grade = "SELECT Grade FROM `{$GLOBALS['block_table']}` WHERE IDCode = '$idcode' ";
 	
 	$conn = new mysqli($servername, $username, $password, $dbname);
 

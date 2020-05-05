@@ -3,7 +3,7 @@
 
 
 
-$admin_insert_setting = "INSERT INTO `submission_Table`(	`SubjectCode`	, 
+$admin_insert_setting = "INSERT INTO `{$GLOBALS['submission_table']}`(	`SubjectCode`	, 
 												`SubjectName`	,
 												`min`			,
 												`max`			, 
@@ -18,7 +18,7 @@ $admin_insert_setting = "INSERT INTO `submission_Table`(	`SubjectCode`	,
 					'$setting->submission_date'	
 					)";
 
-$admin_update_setting = "UPDATE `submission_Table` 
+$admin_update_setting = "UPDATE `{$GLOBALS['submission_table']}` 
 			 
 			SET 
 				SubjectName =	'$setting->get_subjectName()' 			,	

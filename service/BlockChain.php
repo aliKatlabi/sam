@@ -86,7 +86,7 @@ function prepareBlock($Grade ,$IDCode , $con ){
 								Grade,
 								Prev_hash,
 								timeStamp
-								FROM `Report_Table` join `Block_Table` USING (IDCode) ORDER BY Sequence ";
+								FROM `Report_Table` join `{$GLOBALS['block_table']}` USING (IDCode) ORDER BY Sequence ";
 								
 		$res = $con->query($query_inf);
 		

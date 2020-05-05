@@ -173,7 +173,7 @@ if (!$uploadOk) {
 			$rowfile = $row->file_;
 
 			
-			$user_insert = "INSERT INTO `Report_Table`(
+			$user_insert = "INSERT INTO `{$GLOBALS['report_table']}`(
 											
 											`IDCode`		, 
 											`NeptunCode` 	,
@@ -190,7 +190,7 @@ if (!$uploadOk) {
 					'$row->email_'
 					)";
 
-			$file_insert = "INSERT INTO `File_Table`(
+			$file_insert = "INSERT INTO `{$GLOBALS['file_table']}`(
 											
 											`IDCode`    , 
 											`FileName`  ,
