@@ -215,7 +215,7 @@ if (!$uploadOk) {
 
 						if ($conn->query($block_insert) === TRUE) {
 							
-							 $notify['succesful_update'];
+							 echo $notify['succesful_update'];
 							 echo "ID CODE : ".$row->IDCode_."<br>";
 					
 
