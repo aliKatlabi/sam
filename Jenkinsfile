@@ -14,7 +14,7 @@ pipeline {
 					
 					sh 'echo "<<<Install dependencies>>>"'
 					
-                    sh 'php composer.phar install --prefer-dist --no-progress --no-suggeste'
+                    sh 'php composer.phar install --prefer-dist --no-progress'
 					
 			   }
 			   
