@@ -436,6 +436,7 @@ a:active {
 	padding-top: 10px; 
 	transition: 0.5s; 
 	border-radius:5px;
+	
  	grid-row: 3/6;
 	
 	grid-column: 1/2;
@@ -515,6 +516,7 @@ a:active {
 	border-radius:5px;
 	background-color: var(--background-container-inside);
 	
+	overflow: auto;
 	
 	grid-column:1/2;
 
