@@ -15,7 +15,6 @@ $notify = array(
 						<br>"
 		,
 		"exist_file"=>"Failed to update! 
-					  <br>block already reserved
 					  <br>The information you're trying to insert exist! 
 					  <br>"
 		,

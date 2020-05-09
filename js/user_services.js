@@ -78,6 +78,7 @@ function update_info(){
    xhttp.send("");
 }
 
+
 var pos = 0;
 
 function logger(response,speed,elementid)
@@ -112,4 +113,3 @@ function logger(response,speed,elementid)
 	}
 	
 } 
-
