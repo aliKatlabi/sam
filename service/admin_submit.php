@@ -1,6 +1,6 @@
 <?php
 
-include 'utiles.php';
+require 'utiles.php';
 include 'connection_info.php';
 include 'queries_par.php';
 include 'BlockChain.php';
@@ -66,13 +66,15 @@ if($ok){
 				$prevh 		= $block->get_prevHash();
 				$hash 		= $block->get_hash();
 				$ts 		= $block->get_timeStamp();
-				
-				
-				$update_sql = "UPDATE `Block_Table` SET Grade ='$grade',
+				$nonce 		= $block->get_nonce();
+		
+				$update_sql = "UPDATE `{$GLOBALS['block_table']}` SET 
+														Grade ='$grade',
 														Sequence='$seq',
 														Hash = '$hash',
 														Prev_hash='$prevh',
-														timeStamp ='$ts' 	
+														timeStamp ='$ts',
+														nonce = '$nonce'
 								WHERE IDCode = '$idcode' ";
 		
 		

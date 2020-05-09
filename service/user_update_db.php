@@ -210,7 +210,7 @@ if (!$uploadOk) {
 				if ($conn->query($user_insert) === TRUE) {
 					
 					
-						$block_insert = "INSERT INTO `Block_Table`(`IDCode`	) VALUES ('$row->IDCode_')";
+						$block_insert = "INSERT INTO `{$GLOBALS['block_table']}`(`IDCode`) VALUES ('$row->IDCode_')";
 
 
 						if ($conn->query($block_insert) === TRUE) {

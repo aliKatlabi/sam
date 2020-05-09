@@ -1,6 +1,6 @@
 <?php
 
-			
+		
 class Block{
 	
 	public  $Seq;
@@ -8,7 +8,8 @@ class Block{
 	public  $PrevHash;
 	public  $Data;
 	public  $TimeStamp ;
-	
+	public  $nonce;
+
 	 
 	
 	 function set_up($prevh ,$data, $sq){
@@ -16,12 +17,14 @@ class Block{
 		$date = new DateTime();
 		$this->TimeStamp 	= $date->getTimestamp();
 		$this->Seq 	= $sq;
+		$this->nonce = 0;
 		
 		if($sq==0){
 			$this->PrevHash		= 0;
 		}else{
 			$this->PrevHash		= $prevh;
 		}
+	
 		 
 		 $this->Hash = $this->calculateHash();
 		
@@ -34,6 +37,7 @@ class Block{
 	 function set_timeStamp($v) 	{ 	$this->TimeStamp 	= $v;}
 	 function set_data($v) 			{	$this->Data 		= $v;}
 	 function set_seq($v) 			{ 	$this->Seq			= $v;}
+	 function set_nonce($v) 		{ 	$this->nonce		= $v;}
 	 
 	  
   // getters 
@@ -43,10 +47,11 @@ class Block{
 	 function get_data()		{	return	$this->Data ;		}
 	 function get_timeStamp() 	{ 	return	$this->TimeStamp ;	}
 	 function get_seq() 		{ 	return	$this->Seq ;		}
+	 function get_nonce() 		{ 	return	$this->nonce ;		}
 	 
 	 function calculateHash(){
 		 
-		 $string = ($this->PrevHash).($this->TimeStamp).($this->Data);
+		 $string = ($this->PrevHash).($this->TimeStamp).($this->Data).((string)$this->nonce);
 		 $hash = hash('tiger192,3', $string );
 		 return $hash;
 		 
@@ -85,7 +90,8 @@ function prepareBlock($Grade ,$IDCode , $con ){
 								Hash,
 								Grade,
 								Prev_hash,
-								timeStamp
+								timeStamp,
+								nonce
 								FROM `Report_Table` join `{$GLOBALS['block_table']}` USING (IDCode) ORDER BY Sequence ";
 								
 		$res = $con->query($query_inf);
@@ -111,9 +117,11 @@ function prepareBlock($Grade ,$IDCode , $con ){
 			$block_->set_prevHash($row_["Prev_hash"]);
 			$block_->set_hash($row_["Hash"]);
 			$block_->set_timeStamp($row_["timeStamp"]);
+			$block_->set_nonce($row_["nonce"]);
+			
 			$block_->set_data($row_["Grade"]);
 		
-		
+			
 			//$block_->print_block();
 			if($row_["Sequence"]>=$max_seq){
 				$last_block = $block_;
@@ -125,10 +133,8 @@ function prepareBlock($Grade ,$IDCode , $con ){
 				$curr_idx = $i;
 				$curr_block = $block_;
 				
-		
 				if( $row_["Sequence"] != -1)
 				{
-					
 					$has_seq = true;
 				}
 			}
@@ -140,14 +146,12 @@ function prepareBlock($Grade ,$IDCode , $con ){
 	} else {
 		echo "0 results";
 	}
-	// sort the collected blocks acording to sequence 
-	
+
 	
 	// dose the grade I am trying to update  have a sequence number? 
 	if($has_seq){
 		
 		$curr_seq = $curr_block->get_seq();
-	
 	
 		$blocks[$curr_idx]->set_data($Grade);
 	
@@ -160,27 +164,45 @@ function prepareBlock($Grade ,$IDCode , $con ){
 		$block = new Block();
 		$block ->set_up($prvh,$Grade, $last_block->get_seq()+1);
 		
+		mine($block,2);
 		
 		$size = count($blocks);
 		$blocks[$curr_idx] = $block;
 	
-	}
-	
+		
 		$valid = IsChainValid($blocks);
 		
 		if($valid){
 			//UPDATE 
-			
+			admin_logger("Valid blockchain..");
 			return $block;
 			
 		}else{
-			
+			admin_logger("not valid blockchain..");
+			unset($block) ;
 			return false;
 			// echo erro 
 		}
 		
+	}
 }
 
+function mine($block,$difficulty)
+    {
+		
+        while (substr($block->Hash, 0, $difficulty) !== str_repeat("0", $difficulty)) {
+		
+            $block->nonce++;
+            $block->Hash = $block->calculateHash();
+			
+			if($block->nonce%5==0){
+					echo "<span> * <span> ";
+			}
+        }
+		echo "<br>";
+        admin_logger("Block_".$block->Seq."_ mined");
+    }
+	
 function IsChainValid($blocks){
 	
 	//uasort($blocks, array("Block", "cmp"));
@@ -195,7 +217,7 @@ function IsChainValid($blocks){
 	
 	unset($blocks_new[-1]);
 	
-	
+
 	
 	$len = count($blocks_new);
 	for($i = 0 ; $i< $len ;$i++)
@@ -215,8 +237,6 @@ function IsChainValid($blocks){
 				$currprevh	= rtrim($currow->get_prevHash());
 				$currh		= rtrim($currow->get_Hash());
 				$calh  		= rtrim($currow->calculateHash());
-			
-			
 			} 
 		
 			

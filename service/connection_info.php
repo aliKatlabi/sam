@@ -1,7 +1,7 @@
 <?php
 
-
-/* $servername = "mysql.caesar.elte.hu";
+/* 
+$servername = "mysql.caesar.elte.hu";
 $username = "alikatlabi";
 $password = "WimgnHENWgITEhxr";
 $dbname = "alikatlabi";
@@ -20,7 +20,7 @@ $dbname = "sam";
 
 $file_table= "file_table";
 $report_table= "report_table";
-$submission_table= "submission_table";
+$submission_table= "setting_table";
 $block_table= "block_table";
 
 
