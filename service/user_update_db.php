@@ -18,6 +18,10 @@ $notify = array(
 					  <br>The information you're trying to insert exist! 
 					  <br>"
 		,
+		"user_exist"=>"Failed to update! 
+					  <br>user exist! 
+					  <br>"
+		,
 		"fail_update"=>"Failed to update! 
 						<br>"
 		,
@@ -208,7 +212,6 @@ if (!$uploadOk) {
 			
 				if ($conn->query($user_insert) === TRUE) {
 					
-					
 						$block_insert = "INSERT INTO `{$GLOBALS['block_table']}`(`IDCode`) VALUES ('$row->IDCode_')";
 
 
@@ -225,10 +228,13 @@ if (!$uploadOk) {
 						}
 						
 				} else {
-					 echo $notify['exist_file'];
+					 echo $notify['user_exist'];
 					
 				}
 
+			}else{
+				 echo $notify['file_exist'];
+					
 			}
 			flush();
 			$conn->close();
