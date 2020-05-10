@@ -6,14 +6,12 @@ pipeline {
      
         
 		
-		vendor/squizlabs/php_codesniffer/bin/phpcs service/
 		stage('code sniff') {
 			steps {
 					
 					sh 'echo "<<<Validate composer.json and composer.lock>>>"'
 					
-                    sh ' vendor/squizlabs/php_codesniffer/bin/phpcs service/vendor/squizlabs/php_codesniffer/bin/phpcs service/
-'
+                    sh ' vendor/squizlabs/php_codesniffer/bin/phpcs service/vendor/squizlabs/php_codesniffer/bin/phpcs service/'
 					
 			   }
 			   
