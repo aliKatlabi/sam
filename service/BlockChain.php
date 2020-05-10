@@ -164,7 +164,7 @@ function prepareBlock($Grade ,$IDCode , $con ){
 		$block = new Block();
 		$block ->set_up($prvh,$Grade, $last_block->get_seq()+1);
 		
-		mine($block,4);
+		mine($block,2);
 		
 		$size = count($blocks);
 		$blocks[$curr_idx] = $block;
