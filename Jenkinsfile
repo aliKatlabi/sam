@@ -41,6 +41,12 @@ pipeline {
         always {
             echo 'One way or another, I have finished'
 			
+			archiveArtifacts artifacts: 'service/**/*.php', fingerprint: true
+			archiveArtifacts artifacts: 'js/**/*.js', fingerprint: true
+			archiveArtifacts artifacts: 'css/**/*.css', fingerprint: true
+			archiveArtifacts artifacts: 'moderator.html', fingerprint: true
+			archiveArtifacts artifacts: 'index.html', fingerprint: true
+			
             deleteDir() /* clean up our workspace */
         }
         success {
