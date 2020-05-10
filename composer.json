@@ -11,6 +11,9 @@
             "role": "Software Developer"
         }],
     "require": {
-        "kicken/gearman-php": "^1.4"
+        "kicken/gearman-php": "^1.4",
+        "squizlabs/php_codesniffer": "*"
+    },
+    "require-dev": {
     }
 }
