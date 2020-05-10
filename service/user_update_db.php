@@ -31,6 +31,8 @@ $notify = array(
 							<br>Email address when it's ready
 							<br>Or Keep this ID code to query your grade 
 							<br>"
+		,
+		"improbable"=>"you just won the lotary .. try submitting again <br>"
 							  
 	
 );
@@ -93,18 +95,18 @@ if (!$uploadOk) {
 
 } else {
 		
-        //echo "The file ". basename($_FILES["file"]["name"]). " has been uploaded.";
 	if (isset($_FILES["file"]["name"])) 
 	{
-			$row = new Report();
-			$file = new DBFile();
-			
-			$ERR = false;
-			$emialErr="";
-			$nameErr="";
-			$npcodeErr="";
 			
 			if ($_SERVER["REQUEST_METHOD"] == "POST") {
+				
+				$row = new Report();
+				$file = new DBFile();
+				
+				$ERR = false;
+				$emialErr="";
+				$nameErr="";
+				$npcodeErr="";
 				
 				if(empty($_POST["NeptunCode"])){
 					$ERR = true;
@@ -144,7 +146,7 @@ if (!$uploadOk) {
 					
 				
 				}else{
-					echo "you just won the lotary .. try submitting again <br>";
+					echo $notify["improbable"];
 					$ERR = true;
 				}
 				
@@ -208,9 +210,9 @@ if (!$uploadOk) {
 					'$file->content'		
 					)";
 			
-			if ($conn->query($file_insert) === TRUE) {
 			
-				if ($conn->query($user_insert) === TRUE) {
+			if ($conn->query($user_insert) === TRUE) {
+				if ($conn->query($file_insert) === TRUE) {
 					
 						$block_insert = "INSERT INTO `{$GLOBALS['block_table']}`(`IDCode`) VALUES ('$row->IDCode_')";
 
@@ -226,16 +228,16 @@ if (!$uploadOk) {
 							 echo "Failed to update block"."<br>";
 							
 						}
-						
-				} else {
+					}else{
+				 echo $notify['file_exist'];
+					
+			}		
+			} else {
 					 echo $notify['user_exist'];
 					
 				}
 
-			}else{
-				 echo $notify['file_exist'];
-					
-			}
+		
 			flush();
 			$conn->close();
 

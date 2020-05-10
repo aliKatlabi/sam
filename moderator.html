@@ -131,7 +131,26 @@
 		<!-- database table -->
 			
 				<div class="database">
-				
+						<script>
+			
+							function copytoclipboard(index) {
+							  const el = document.createElement('textarea');
+							  tdid = 'xc_'+index;
+							  var str = document.getElementById(tdid).innerHTML;
+							  el.value=str.substr(0,13);
+							  el.setAttribute('readonly', '');
+							  el.style.position = 'absolute';
+							  el.style.left = '-9999px';
+							  document.body.appendChild(el);
+							  el.select();
+							  el.setSelectionRange(0, 99999);
+							  document.execCommand('copy');
+							  document.body.removeChild(el);
+							  document.getElementById('idcode_input').value=str.substr(0,13);
+							
+							}
+
+						</script>
 					<div class="db_container">
 						<table class = "db_table" id="db_table_">
 							<!--

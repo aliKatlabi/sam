@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 									Content
 											FROM `{$GLOBALS['report_table']}` 
 											JOIN `{$GLOBALS['block_table']}`  USING (IDCode)
-											JOIN `{$GLOBALS['file_table']}` 	USING (IDCode) "
+											JOIN `{$GLOBALS['file_table']}`   USING (IDCode) "
 	,
 
 	"Settings" => "SELECT SubjectCode,SubjectName,min,max,deadLine,state FROM `{$GLOBALS['submission_table']}`"
@@ -200,7 +200,7 @@ function query_table($connect,$query){
 				$fcontent = $rows[$x]->get_file()->get_content();
 				
 				$file =$rows[$x]->get_file();
-			
+				// handling the submitted files 
 				$tmpfname = tempnam(getcwd()."data","");
 				$handle = fopen($tmpfname, "w");
 				fwrite($handle, $fcontent);
@@ -208,8 +208,10 @@ function query_table($connect,$query){
 				$tmpfile_content = file_get_contents($path);
 				fclose($handle);
 			
-			
-				echo "<td>" . $rows[$x]->get_IDCode() .		"</td>";
+		
+				
+				$copy_icone = "<i class='material-icons' onclick=copytoclipboard(".$x.") style='cursor:grabbing;position:absolute;right:15px;font-size:16px'>content_copy</i>";
+				echo "<td id='xc_".$x."' style='position:relative'>" . $rows[$x]->get_IDCode() .	$copy_icone ."</td>";
 				echo "<td>" . $rows[$x]->get_NPCode() . 	"</td>";
 				echo "<td>" . $rows[$x]->get_name()   . 	"</td>";
 				echo "<td>" . $rows[$x]->get_grade()  . 	"</td>";
@@ -219,7 +221,8 @@ function query_table($connect,$query){
 			
 			}else{
 				
-				echo "<td>" . $rows[$x]->get_IDCode() .		 	"</td>";
+				$copy_icone = "<i class='material-icons' onclick=copytoclipboard(".$x.") style='cursor:grabbing;position:absolute;right:15px;font-size:16px'>content_copy</i>";
+				echo "<td id='xc_".$x."'style='position:relative'>" . $rows[$x]->get_IDCode() .	$copy_icone ."</td>";
 				echo "<td>" . "not availabe" . 					"</td>";
 				echo "<td>" . "not availabe" . 					"</td>";
 				echo "<td>" . "not graded  " . 					"</td>";

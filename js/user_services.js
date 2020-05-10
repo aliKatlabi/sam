@@ -17,17 +17,63 @@ function service_submit() {
 			document.getElementById("q_res").style.height  = "150px";
 			document.getElementById("q_res").style.padding = "8px 8px 8px 8px";
 			
-			logger(this,37,"q_res");
+			logger(this.responseText,37,"q_res");
+			/* 
+			ifHasChanged("index.html", function (nModif, nVisit) {
+			 logger("The page '" + this.filepath + "' has been changed on " + (new Date(nModif)).toLocaleString() + "!",37,"q_res");
+		
+			}); */
 		}
   };
+  
+	xhttp.addEventListener("progress", updateProgress);
+	xhttp.addEventListener("load", transferComplete);
+	xhttp.addEventListener("error", transferFailed);
+	xhttp.addEventListener("abort", transferCanceled);
 
-  xhttp.open("POST","service/user_update_db.php" , true);
-  xhttp.send(fd);
+	xhttp.open("POST","service/user_update_db.php" , true);
+	xhttp.send(fd);
+}
+
+function updateProgress (oEvent) {
+  if (oEvent.lengthComputable) {
+    var percentComplete = oEvent.loaded / oEvent.total * 100;
+	
+	document.getElementById("q_res").innerHTML+= percentComplete+"<br>";
+
+    // ...
+  } else {
+	  document.getElementById("q_res").innerHTML+="... ";
+
+    // Unable to compute progress information since the total size is unknown
+  }
+}
+
+function transferComplete(evt) {
+	  document.getElementById("q_res").innerHTML+="The transfer is complete."+"<br>";
+
+	
+}
+
+function transferFailed(evt) {
+		  document.getElementById("q_res").innerHTML+="An error occurred while transferring the file."+"<br>";
+
+	}
+
+function transferCanceled(evt) {
+	 document.getElementById("q_res").innerHTML+="The transfer has been canceled by the user."+"<br>";
+
 }
 
 
-function service_query() {
 
+//////////////
+
+
+
+
+function service_query() {
+		
 	var f  = document.getElementById("form_query"); 
 	var fd = new FormData(f);
 
@@ -48,7 +94,7 @@ function service_query() {
 			//document.getElementById("q_res").style.borderBottomWidth = "20px";
 			
 			
-			logger(this,37,"q_res");
+			logger(this.responseText,37,"q_res");
 		}
   };
 
@@ -70,7 +116,8 @@ function update_info(){
 	if (this.readyState == 4 && this.status == 200)
 		{
 			
-			 logger(this,37,"text_area");
+			 logger(this.responseText,37,"text_area");
+		
 		}
   };
 
@@ -78,14 +125,35 @@ function update_info(){
    xhttp.send("");
 }
 
+////////////////////// testing last modified date changes
+/* 
+function getHeaderTime () {
+  var nLastVisit = parseFloat(window.localStorage.getItem('lm_' + this.filepath));
+  var nLastModif = Date.parse(this.getResponseHeader("Last-Modified"));
 
+  if (isNaN(nLastVisit) || nLastModif > nLastVisit) {
+    window.localStorage.setItem('lm_' + this.filepath, Date.now());
+    isFinite(nLastVisit) && this.callback(nLastModif, nLastVisit);
+  }
+}
+
+function ifHasChanged(sURL, fCallback) {
+  var oReq = new XMLHttpRequest();
+  oReq.open("HEAD"  , sURL);
+  oReq.callback = fCallback;
+  oReq.filepath = sURL;
+  oReq.onload = getHeaderTime;
+  oReq.send();
+}
+ */
+//////////////////////////////
 var pos = 0;
 
-function logger(response,speed,elementid)
+function logger(responsetext,speed,elementid)
 {
 		
 	var elem = document.getElementById(elementid);
-	var str  = response.responseText;
+	var str  = responsetext;
 	if(pos ==0)
 	{
 		var id = setInterval(frame, speed);

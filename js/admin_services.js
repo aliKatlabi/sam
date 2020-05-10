@@ -88,8 +88,8 @@ function service_submit_info() {
 		
 		xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-			  logger(this.responseText);
-			
+			logger(this.responseText);
+		
 			  //document.getElementById("logger_").innerHTML = this.responseText;
 			  //alert(this.responseText);
             }
@@ -127,8 +127,7 @@ function service_save_settings() {
             if (this.readyState == 4 && this.status == 200) {
 				
 				logger(this.responseText);
-			
-		
+				
             }
         };
 		
@@ -137,6 +136,7 @@ function service_save_settings() {
 	
 	
 }
+
 
 function logger(responseText) {
 		var today = new Date();

@@ -1,15 +1,16 @@
 {
-    "name":"thesis_project/thesis_project-php",
-	"homepage": "http://alikatlabi.web.elte.hu/Thesis_project",
-	"description": "Theses Project",
+    "name":"sam/sam-php",
+	"homepage": "https://secureassignmentmanager.azurewebsites.net/",
+	"description": " secure assignment manager _ Thesis Project _ ",
 	"license": "Apache-2.0",
 	"authors": [
         {
             "name": "Ali katlabi",
-            "email": "alikatlabi90@gmail.com",
+            "email": "alikatlabi0@gmail.com",
             "homepage": "http://alikatlabi.web.elte.hu",
-            "role": "Developer"
-        }]
-
-	
-} 
+            "role": "Software Developer"
+        }],
+    "require": {
+        "kicken/gearman-php": "^1.4"
+    }
+}

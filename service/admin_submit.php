@@ -6,7 +6,6 @@ include 'queries_par.php';
 include 'BlockChain.php';
 
 
-
 $grade;
 $idcode= "";
 $ok = true;
@@ -56,12 +55,16 @@ if($ok){
 			//die("<span> <span id='pep'></span> Connection failed: " . $conn->connect_error ."</span><br>");
 			die( $conn->connect_error );
 		}
+		# Create our worker object.
 		
-		$block = prepareBlock($grade  ,$idcode ,$conn  );
+	
+		$block = prepareBlock($grade,$idcode ,$conn  );
 		
 		if($block == false ){
 			admin_logger("Grade cannot be modified");
 		}else{
+		
+		
 				$seq 		= $block->get_seq(); 
 				$prevh 		= $block->get_prevHash();
 				$hash 		= $block->get_hash();

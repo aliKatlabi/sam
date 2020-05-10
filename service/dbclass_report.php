@@ -14,7 +14,6 @@ class Report{
 	public  $time_ ;
 	public  $email_;
 	public  $grade_;
-	
 	public  $file_ ;
 	
 	//public  $seq_;

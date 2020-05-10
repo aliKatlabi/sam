@@ -18,13 +18,15 @@ if ($conn->connect_error) {
 			
 			while($row = $result->fetch_assoc())
 			{
-				$SubjectName 	= $row["SubjectName"];
-				$min 			= $row["min"];
-				$max		 	= $row["max"];
-				$deadLine 		= $row["deadLine"];
+				
 				$state			= $row["state"];
 				
 				if($state==1){
+					
+					$SubjectName 	= $row["SubjectName"];
+					$min 			= $row["min"];
+					$max		 	= $row["max"];
+					$deadLine 		= $row["deadLine"];
 					
 					$message = "> Assignment of Subject : ".$SubjectName."  should be submitted before: "
 					.$deadLine." --- maximum grade is : ".$max."  minimum is : ".$min."<br>";

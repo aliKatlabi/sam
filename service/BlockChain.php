@@ -164,10 +164,13 @@ function prepareBlock($Grade ,$IDCode , $con ){
 		$block = new Block();
 		$block ->set_up($prvh,$Grade, $last_block->get_seq()+1);
 		
-		mine($block,2);
+		mine($block,4);
 		
 		$size = count($blocks);
 		$blocks[$curr_idx] = $block;
+	
+		
+	}
 	
 		
 		$valid = IsChainValid($blocks);
@@ -183,13 +186,10 @@ function prepareBlock($Grade ,$IDCode , $con ){
 			return false;
 			// echo erro 
 		}
-		
-	}
 }
 
 function mine($block,$difficulty)
     {
-		
         while (substr($block->Hash, 0, $difficulty) !== str_repeat("0", $difficulty)) {
 		
             $block->nonce++;

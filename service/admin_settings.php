@@ -1,22 +1,22 @@
 <?php
 
-include "class_config.php";
+include "dbclass_setting.php";
 include 'connection_info.php';
 include 'utiles.php';
 
 
 
-$setting = new Config();
 
 
 $ok = true;
-
 $option="";
 $deadline = true;
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	
+	$setting = new Config();
+
 	if(empty($_POST["options"])){
 		$ok = false;
 		admin_logger("Please,specify an option to execute!");
@@ -230,7 +230,7 @@ function execute($connect, $op , $qops , $subCode){
 	}
 	if($unpublish){
 	
-		$ex = subjectnameexist($connect, $subCode);
+		$ex = subjectexist($connect, $subCode);
 		if($ex){
 			if ($connect->query($sql_option) === TRUE) {
 				
@@ -251,7 +251,7 @@ function execute($connect, $op , $qops , $subCode){
 }
 
 
-function subjectnameexist($c,$code){
+function subjectexist($c,$code){
 	
 	$info_sql = "SELECT SubjectName FROM `{$GLOBALS['submission_table']}` WHERE SubjectCode='$code'";
 

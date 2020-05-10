@@ -19,7 +19,8 @@ class DBFile{
 			$fp = fopen($v, 'r');
 			$this->content = fread($fp, filesize($_FILES["file"]["tmp_name"]));
 			$this->content = addslashes($this->content);
-			fclose($fp);}
+			fclose($fp);
+			}
 			
 			
 	function set_content_q($v) {$this->content = $v;}
