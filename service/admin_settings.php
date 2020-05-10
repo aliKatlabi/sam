@@ -10,7 +10,7 @@ include 'utiles.php';
 
 $ok = true;
 $option="";
-$deadline = true;
+$deadline = false;
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -62,12 +62,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	if(empty($_POST["deadline"])){
 		
 		$deadline = false;
-
+		admin_logger("deadlin : ".$_POST["deadline"] );
 		
 	}else{
-	
+		$deadline = true;
 		$setting->set_deadline($_POST["deadline"]);
-		admin_logger("deadlin : ".$_POST["deadline"] ." is to be set!");
+		admin_logger("deadlin : ".$_POST["deadline"] );
 	}
 	
 	
@@ -168,9 +168,7 @@ function execute($connect, $op , $qops , $subCode){
 		
 		if ($connect->query($sql_option) === TRUE) {
 			
-			if(!$deadLine){
-				admin_logger("no deadline set!");
-			}
+		
 			admin_logger("setting saved!");
 			
 		} else {
@@ -182,9 +180,7 @@ function execute($connect, $op , $qops , $subCode){
 		
 		 if($ex){
 			 if ($connect->query($sql_option) === TRUE) {
-				if(!$deadLine){
-				admin_logger("no deadline set!");
-			}
+			
 				admin_logger("setting updated!");
 			
 			} else {
