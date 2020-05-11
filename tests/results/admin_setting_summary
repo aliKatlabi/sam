@@ -1,0 +1,801 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1589161162644,498,moderator setting save good ,200,OK,sam_moderator  1-1,text,true,,5922,336,1,1,https://secureassignmentmanager.azurewebsites.net/moderator.html,498,0,382
+1589161163142,106,moderator setting delete good ,200,OK,sam_moderator  1-1,text,true,,5922,337,1,1,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161163249,107,moderator setting update good ,200,OK,sam_moderator  1-1,text,true,,5922,339,1,1,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161163357,106,moderator setting publsih good,200,OK,sam_moderator  1-1,text,true,,5922,318,1,1,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161163464,106,moderator setting unpublsih good,200,OK,sam_moderator  1-1,text,true,,5922,319,1,1,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161163571,107,moderator setting query good,200,OK,sam_moderator  1-1,text,true,,5922,319,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161163679,107,moderator setting save bad ,200,OK,sam_moderator  1-1,text,true,,5922,381,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161163786,106,moderator setting delete bad ,200,OK,sam_moderator  1-1,text,true,,5922,385,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161163893,105,moderator setting update bad ,200,OK,sam_moderator  1-1,text,true,,5922,312,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161163649,430,moderator setting save good ,200,OK,sam_moderator  1-2,text,true,,5922,336,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,430,0,318
+1589161163998,107,moderator setting publsih bad,200,OK,sam_moderator  1-1,text,true,,5922,384,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161164106,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-1,text,false,,1306,0,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161164081,111,moderator setting delete good ,200,OK,sam_moderator  1-2,text,true,,5922,337,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,111,0,0
+1589161164107,105,moderator setting query bad,200,OK,sam_moderator  1-1,text,true,,5922,336,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161164193,108,moderator setting update good ,200,OK,sam_moderator  1-2,text,true,,5922,339,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161164213,107,moderator submit good,200,OK,sam_moderator  1-1,text,true,,5922,271,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161164302,105,moderator setting publsih good,200,OK,sam_moderator  1-2,text,true,,5922,318,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161164320,105,moderator submit bad 1,200,OK,sam_moderator  1-1,text,true,,5922,266,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161164408,106,moderator setting unpublsih good,200,OK,sam_moderator  1-2,text,true,,5922,319,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161164425,106,moderator submit bad 2,200,OK,sam_moderator  1-1,text,true,,5922,328,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161164531,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-1,text,false,,1306,0,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161164515,106,moderator setting query good,200,OK,sam_moderator  1-2,text,true,,5922,319,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161164532,107,moderator setting save good ,200,OK,sam_moderator  1-1,text,true,,5922,336,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161164622,128,moderator setting save bad ,200,OK,sam_moderator  1-2,text,true,,5922,381,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,128,0,0
+1589161164640,115,moderator setting delete good ,200,OK,sam_moderator  1-1,text,true,,5922,337,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,114,0,0
+1589161164751,107,moderator setting delete bad ,200,OK,sam_moderator  1-2,text,true,,5922,385,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161164858,106,moderator setting update bad ,200,OK,sam_moderator  1-2,text,true,,5922,312,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161164965,104,moderator setting publsih bad,200,OK,sam_moderator  1-2,text,true,,5922,384,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,104,0,0
+1589161165069,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-2,text,false,,1306,0,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161164645,445,moderator setting save good ,200,OK,sam_moderator  1-3,text,true,,5922,336,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,445,0,333
+1589161165070,105,moderator setting query bad,200,OK,sam_moderator  1-2,text,true,,5922,336,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161165090,109,moderator setting delete good ,200,OK,sam_moderator  1-3,text,true,,5922,337,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161164755,445,moderator setting update good ,200,OK,sam_moderator  1-1,text,true,,5922,339,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,445,0,328
+1589161165175,109,moderator submit good,200,OK,sam_moderator  1-2,text,true,,5922,271,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161165199,106,moderator setting update good ,200,OK,sam_moderator  1-3,text,true,,5922,339,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161165200,107,moderator setting publsih good,200,OK,sam_moderator  1-1,text,true,,5922,318,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161165284,106,moderator submit bad 1,200,OK,sam_moderator  1-2,text,true,,5922,266,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161165306,104,moderator setting publsih good,200,OK,sam_moderator  1-3,text,true,,5922,318,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,104,0,0
+1589161165307,106,moderator setting unpublsih good,200,OK,sam_moderator  1-1,text,true,,5922,319,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161165390,113,moderator submit bad 2,200,OK,sam_moderator  1-2,text,true,,5922,328,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,112,0,0
+1589161165503,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-2,text,false,,1306,0,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161165411,106,moderator setting unpublsih good,200,OK,sam_moderator  1-3,text,true,,5922,319,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161165413,108,moderator setting query good,200,OK,sam_moderator  1-1,text,true,,5922,319,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161165504,105,moderator setting save good ,200,OK,sam_moderator  1-2,text,true,,5922,336,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161165517,110,moderator setting query good,200,OK,sam_moderator  1-3,text,true,,5922,319,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,110,0,0
+1589161165522,107,moderator setting save bad ,200,OK,sam_moderator  1-1,text,true,,5922,381,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161165610,105,moderator setting delete good ,200,OK,sam_moderator  1-2,text,true,,5922,337,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161165627,106,moderator setting save bad ,200,OK,sam_moderator  1-3,text,true,,5922,381,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161165629,107,moderator setting delete bad ,200,OK,sam_moderator  1-1,text,true,,5922,385,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161165733,106,moderator setting delete bad ,200,OK,sam_moderator  1-3,text,true,,5922,385,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161165737,108,moderator setting update bad ,200,OK,sam_moderator  1-1,text,true,,5922,312,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161165840,107,moderator setting update bad ,200,OK,sam_moderator  1-3,text,true,,5922,312,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161165846,107,moderator setting publsih bad,200,OK,sam_moderator  1-1,text,true,,5922,384,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161165954,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-1,text,false,,1306,0,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161165947,112,moderator setting publsih bad,200,OK,sam_moderator  1-3,text,true,,5922,384,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,111,0,0
+1589161166059,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-3,text,false,,1306,0,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161165954,106,moderator setting query bad,200,OK,sam_moderator  1-1,text,true,,5922,336,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161165647,427,moderator setting save good ,200,OK,sam_moderator  1-4,text,true,,5922,336,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,427,0,321
+1589161165716,423,moderator setting update good ,200,OK,sam_moderator  1-2,text,true,,5922,339,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,423,0,317
+1589161166059,108,moderator setting query bad,200,OK,sam_moderator  1-3,text,true,,5922,336,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161166061,109,moderator submit good,200,OK,sam_moderator  1-1,text,true,,5922,271,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161166074,107,moderator setting delete good ,200,OK,sam_moderator  1-4,text,true,,5922,337,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161166139,109,moderator setting publsih good,200,OK,sam_moderator  1-2,text,true,,5922,318,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161166167,106,moderator submit good,200,OK,sam_moderator  1-3,text,true,,5922,271,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161166170,107,moderator submit bad 1,200,OK,sam_moderator  1-1,text,true,,5922,266,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161166182,107,moderator setting update good ,200,OK,sam_moderator  1-4,text,true,,5922,339,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161166248,121,moderator setting unpublsih good,200,OK,sam_moderator  1-2,text,true,,5922,319,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,121,0,0
+1589161166274,107,moderator submit bad 1,200,OK,sam_moderator  1-3,text,true,,5922,266,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161166278,120,moderator submit bad 2,200,OK,sam_moderator  1-1,text,true,,5922,328,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,120,0,0
+1589161166399,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-1,text,false,,1306,0,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161166290,112,moderator setting publsih good,200,OK,sam_moderator  1-4,text,true,,5922,318,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,111,0,0
+1589161166369,108,moderator setting query good,200,OK,sam_moderator  1-2,text,true,,5922,319,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161166381,113,moderator submit bad 2,200,OK,sam_moderator  1-3,text,true,,5922,328,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,113,0,0
+1589161166495,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-3,text,false,,1306,0,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161166400,116,moderator setting save good ,200,OK,sam_moderator  1-1,text,true,,5922,336,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,116,0,0
+1589161166402,118,moderator setting unpublsih good,200,OK,sam_moderator  1-4,text,true,,5922,319,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,118,0,0
+1589161166477,113,moderator setting save bad ,200,OK,sam_moderator  1-2,text,true,,5922,381,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,113,0,0
+1589161166496,105,moderator setting save good ,200,OK,sam_moderator  1-3,text,true,,5922,336,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161166517,107,moderator setting delete good ,200,OK,sam_moderator  1-1,text,true,,5922,337,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161166520,108,moderator setting query good,200,OK,sam_moderator  1-4,text,true,,5922,319,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161166591,106,moderator setting delete bad ,200,OK,sam_moderator  1-2,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161166602,106,moderator setting delete good ,200,OK,sam_moderator  1-3,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161166624,107,moderator setting update good ,200,OK,sam_moderator  1-1,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161166628,106,moderator setting save bad ,200,OK,sam_moderator  1-4,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161166697,108,moderator setting update bad ,200,OK,sam_moderator  1-2,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161166731,107,moderator setting publsih good,200,OK,sam_moderator  1-1,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161166735,106,moderator setting delete bad ,200,OK,sam_moderator  1-4,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161166805,105,moderator setting publsih bad,200,OK,sam_moderator  1-2,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161166910,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-2,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161166841,113,moderator setting update bad ,200,OK,sam_moderator  1-4,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,113,0,0
+1589161166911,106,moderator setting query bad,200,OK,sam_moderator  1-2,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161166954,107,moderator setting publsih bad,200,OK,sam_moderator  1-4,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161167061,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-4,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161166647,433,moderator setting save good ,200,OK,sam_moderator  1-5,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,433,0,321
+1589161167017,104,moderator submit good,200,OK,sam_moderator  1-2,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,104,0,0
+1589161166709,423,moderator setting update good ,200,OK,sam_moderator  1-3,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,423,0,318
+1589161167062,107,moderator setting query bad,200,OK,sam_moderator  1-4,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161167080,105,moderator setting delete good ,200,OK,sam_moderator  1-5,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161167122,111,moderator submit bad 1,200,OK,sam_moderator  1-2,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,111,0,0
+1589161167132,106,moderator setting publsih good,200,OK,sam_moderator  1-3,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161166838,431,moderator setting unpublsih good,200,OK,sam_moderator  1-1,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,431,0,321
+1589161167169,107,moderator submit good,200,OK,sam_moderator  1-4,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161167185,107,moderator setting update good ,200,OK,sam_moderator  1-5,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161167234,106,moderator submit bad 2,200,OK,sam_moderator  1-2,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161167341,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-2,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161167238,107,moderator setting unpublsih good,200,OK,sam_moderator  1-3,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161167269,122,moderator setting query good,200,OK,sam_moderator  1-1,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,121,0,0
+1589161167276,115,moderator submit bad 1,200,OK,sam_moderator  1-4,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,115,0,0
+1589161167292,124,moderator setting publsih good,200,OK,sam_moderator  1-5,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,124,0,0
+1589161167342,105,moderator setting save good ,200,OK,sam_moderator  1-2,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161167345,106,moderator setting query good,200,OK,sam_moderator  1-3,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161167391,109,moderator setting save bad ,200,OK,sam_moderator  1-1,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161167391,110,moderator submit bad 2,200,OK,sam_moderator  1-4,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,110,0,0
+1589161167501,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-4,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161167416,105,moderator setting unpublsih good,200,OK,sam_moderator  1-5,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161167448,106,moderator setting delete good ,200,OK,sam_moderator  1-2,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161167452,104,moderator setting save bad ,200,OK,sam_moderator  1-3,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,104,0,0
+1589161167500,109,moderator setting delete bad ,200,OK,sam_moderator  1-1,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161167501,109,moderator setting save good ,200,OK,sam_moderator  1-4,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161167521,106,moderator setting query good,200,OK,sam_moderator  1-5,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161167554,106,moderator setting update good ,200,OK,sam_moderator  1-2,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161167556,106,moderator setting delete bad ,200,OK,sam_moderator  1-3,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161167610,108,moderator setting delete good ,200,OK,sam_moderator  1-4,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161167609,109,moderator setting update bad ,200,OK,sam_moderator  1-1,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161167628,106,moderator setting save bad ,200,OK,sam_moderator  1-5,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161167661,107,moderator setting publsih good,200,OK,sam_moderator  1-2,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161167662,107,moderator setting update bad ,200,OK,sam_moderator  1-3,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161167718,112,moderator setting publsih bad,200,OK,sam_moderator  1-1,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,112,0,0
+1589161167831,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-1,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161167734,107,moderator setting delete bad ,200,OK,sam_moderator  1-5,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161167769,105,moderator setting publsih bad,200,OK,sam_moderator  1-3,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161167875,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-3,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161167831,107,moderator setting query bad,200,OK,sam_moderator  1-1,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161167841,105,moderator setting update bad ,200,OK,sam_moderator  1-5,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161167875,106,moderator setting query bad,200,OK,sam_moderator  1-3,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161167938,112,moderator submit good,200,OK,sam_moderator  1-1,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,112,0,0
+1589161167946,107,moderator setting publsih bad,200,OK,sam_moderator  1-5,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161168053,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-5,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161167981,108,moderator submit good,200,OK,sam_moderator  1-3,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161167718,432,moderator setting update good ,200,OK,sam_moderator  1-4,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,432,0,319
+1589161168050,107,moderator submit bad 1,200,OK,sam_moderator  1-1,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161168054,105,moderator setting query bad,200,OK,sam_moderator  1-5,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161168089,109,moderator submit bad 1,200,OK,sam_moderator  1-3,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161167769,429,moderator setting unpublsih good,200,OK,sam_moderator  1-2,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,429,0,321
+1589161168151,106,moderator setting publsih good,200,OK,sam_moderator  1-4,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161168157,108,moderator submit bad 2,200,OK,sam_moderator  1-1,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161168265,1,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-1,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161168159,107,moderator submit good,200,OK,sam_moderator  1-5,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161168198,113,moderator submit bad 2,200,OK,sam_moderator  1-3,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,113,0,0
+1589161168199,112,moderator setting query good,200,OK,sam_moderator  1-2,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,112,0,0
+1589161168311,1,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-3,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161168257,106,moderator setting unpublsih good,200,OK,sam_moderator  1-4,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161168266,108,moderator setting save good ,200,OK,sam_moderator  1-1,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161168266,112,moderator submit bad 1,200,OK,sam_moderator  1-5,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,112,0,0
+1589161168311,107,moderator setting save bad ,200,OK,sam_moderator  1-2,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161168312,107,moderator setting save good ,200,OK,sam_moderator  1-3,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161168363,106,moderator setting query good,200,OK,sam_moderator  1-4,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161168379,106,moderator submit bad 2,200,OK,sam_moderator  1-5,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161168377,108,moderator setting delete good ,200,OK,sam_moderator  1-1,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161168485,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-5,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161168419,109,moderator setting delete bad ,200,OK,sam_moderator  1-2,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161168419,111,moderator setting delete good ,200,OK,sam_moderator  1-3,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,111,0,0
+1589161168469,107,moderator setting save bad ,200,OK,sam_moderator  1-4,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161168486,106,moderator setting save good ,200,OK,sam_moderator  1-5,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161168486,109,moderator setting update good ,200,OK,sam_moderator  1-1,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161168528,106,moderator setting update bad ,200,OK,sam_moderator  1-2,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161168530,106,moderator setting update good ,200,OK,sam_moderator  1-3,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161168576,107,moderator setting delete bad ,200,OK,sam_moderator  1-4,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161168592,108,moderator setting delete good ,200,OK,sam_moderator  1-5,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161168595,107,moderator setting publsih good,200,OK,sam_moderator  1-1,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161168637,105,moderator setting publsih good,200,OK,sam_moderator  1-3,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161168634,111,moderator setting publsih bad,200,OK,sam_moderator  1-2,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,111,0,0
+1589161168745,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-2,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161168683,105,moderator setting update bad ,200,OK,sam_moderator  1-4,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161168703,107,moderator setting unpublsih good,200,OK,sam_moderator  1-1,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161168746,106,moderator setting query bad,200,OK,sam_moderator  1-2,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161168788,106,moderator setting publsih bad,200,OK,sam_moderator  1-4,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161168894,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-4,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161168811,106,moderator setting query good,200,OK,sam_moderator  1-1,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161168852,107,moderator submit good,200,OK,sam_moderator  1-2,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161168894,106,moderator setting query bad,200,OK,sam_moderator  1-4,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161168959,112,moderator submit bad 1,200,OK,sam_moderator  1-2,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,112,0,0
+1589161169001,107,moderator submit good,200,OK,sam_moderator  1-4,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161168700,424,moderator setting update good ,200,OK,sam_moderator  1-5,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,424,0,318
+1589161169071,107,moderator submit bad 2,200,OK,sam_moderator  1-2,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161168742,436,moderator setting unpublsih good,200,OK,sam_moderator  1-3,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,436,0,331
+1589161169178,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-2,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161169108,105,moderator submit bad 1,200,OK,sam_moderator  1-4,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161169124,106,moderator setting publsih good,200,OK,sam_moderator  1-5,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161169178,106,moderator setting query good,200,OK,sam_moderator  1-3,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161169178,108,moderator setting save good ,200,OK,sam_moderator  1-2,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161169214,108,moderator submit bad 2,200,OK,sam_moderator  1-4,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161169322,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-4,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161169230,106,moderator setting unpublsih good,200,OK,sam_moderator  1-5,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161168917,440,moderator setting save bad ,200,OK,sam_moderator  1-1,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,440,0,333
+1589161169284,107,moderator setting save bad ,200,OK,sam_moderator  1-3,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161169287,104,moderator setting delete good ,200,OK,sam_moderator  1-2,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,104,0,0
+1589161169323,106,moderator setting save good ,200,OK,sam_moderator  1-4,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161169336,105,moderator setting query good,200,OK,sam_moderator  1-5,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161169358,108,moderator setting delete bad ,200,OK,sam_moderator  1-1,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161169391,108,moderator setting delete bad ,200,OK,sam_moderator  1-3,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161169392,108,moderator setting update good ,200,OK,sam_moderator  1-2,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161169429,106,moderator setting delete good ,200,OK,sam_moderator  1-4,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161169441,106,moderator setting save bad ,200,OK,sam_moderator  1-5,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161169466,108,moderator setting update bad ,200,OK,sam_moderator  1-1,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161169500,107,moderator setting update bad ,200,OK,sam_moderator  1-3,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161169501,106,moderator setting publsih good,200,OK,sam_moderator  1-2,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161169535,106,moderator setting update good ,200,OK,sam_moderator  1-4,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161169548,104,moderator setting delete bad ,200,OK,sam_moderator  1-5,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,104,0,0
+1589161169574,106,moderator setting publsih bad,200,OK,sam_moderator  1-1,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161169681,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-1,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161169607,107,moderator setting publsih bad,200,OK,sam_moderator  1-3,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161169608,106,moderator setting unpublsih good,200,OK,sam_moderator  1-2,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161169714,1,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-3,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161169641,105,moderator setting publsih good,200,OK,sam_moderator  1-4,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161169653,106,moderator setting update bad ,200,OK,sam_moderator  1-5,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161169681,107,moderator setting query bad,200,OK,sam_moderator  1-1,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161169715,105,moderator setting query bad,200,OK,sam_moderator  1-3,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161169715,108,moderator setting query good,200,OK,sam_moderator  1-2,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161169760,106,moderator setting publsih bad,200,OK,sam_moderator  1-5,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161169867,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-5,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161169789,106,moderator submit good,200,OK,sam_moderator  1-1,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161169821,105,moderator submit good,200,OK,sam_moderator  1-3,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161169868,106,moderator setting query bad,200,OK,sam_moderator  1-5,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161169895,109,moderator submit bad 1,200,OK,sam_moderator  1-1,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161169926,105,moderator submit bad 1,200,OK,sam_moderator  1-3,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161169975,105,moderator submit good,200,OK,sam_moderator  1-5,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161170004,111,moderator submit bad 2,200,OK,sam_moderator  1-1,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,111,0,0
+1589161170116,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-1,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161170032,106,moderator submit bad 2,200,OK,sam_moderator  1-3,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161170138,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-3,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161169747,435,moderator setting unpublsih good,200,OK,sam_moderator  1-4,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,435,0,323
+1589161170080,106,moderator submit bad 1,200,OK,sam_moderator  1-5,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161170116,108,moderator setting save good ,200,OK,sam_moderator  1-1,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161170139,107,moderator setting save good ,200,OK,sam_moderator  1-3,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161169823,432,moderator setting save bad ,200,OK,sam_moderator  1-2,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,432,0,325
+1589161170182,111,moderator setting query good,200,OK,sam_moderator  1-4,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,111,0,0
+1589161170187,106,moderator submit bad 2,200,OK,sam_moderator  1-5,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161170293,1,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-5,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161170224,113,moderator setting delete good ,200,OK,sam_moderator  1-1,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,113,0,0
+1589161170246,106,moderator setting delete good ,200,OK,sam_moderator  1-3,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161170255,106,moderator setting delete bad ,200,OK,sam_moderator  1-2,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161170294,108,moderator setting save good ,200,OK,sam_moderator  1-5,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161170293,111,moderator setting save bad ,200,OK,sam_moderator  1-4,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,111,0,0
+1589161170338,107,moderator setting update good ,200,OK,sam_moderator  1-1,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161170352,106,moderator setting update good ,200,OK,sam_moderator  1-3,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161170361,107,moderator setting update bad ,200,OK,sam_moderator  1-2,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161170402,110,moderator setting delete good ,200,OK,sam_moderator  1-5,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,110,0,0
+1589161170404,110,moderator setting delete bad ,200,OK,sam_moderator  1-4,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,110,0,0
+1589161170445,115,moderator setting publsih good,200,OK,sam_moderator  1-1,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,115,0,0
+1589161170458,105,moderator setting publsih good,200,OK,sam_moderator  1-3,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161170468,107,moderator setting publsih bad,200,OK,sam_moderator  1-2,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161170575,1,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-2,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161170512,107,moderator setting update good ,200,OK,sam_moderator  1-5,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161170514,107,moderator setting update bad ,200,OK,sam_moderator  1-4,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161170560,107,moderator setting unpublsih good,200,OK,sam_moderator  1-1,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161170564,108,moderator setting unpublsih good,200,OK,sam_moderator  1-3,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161170576,105,moderator setting query bad,200,OK,sam_moderator  1-2,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161170619,107,moderator setting publsih good,200,OK,sam_moderator  1-5,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161170622,106,moderator setting publsih bad,200,OK,sam_moderator  1-4,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161170729,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-4,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161170668,107,moderator setting query good,200,OK,sam_moderator  1-1,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161170672,105,moderator setting query good,200,OK,sam_moderator  1-3,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161170682,104,moderator submit good,200,OK,sam_moderator  1-2,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,104,0,0
+1589161170729,109,moderator setting query bad,200,OK,sam_moderator  1-4,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161170775,107,moderator setting save bad ,200,OK,sam_moderator  1-1,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161170787,108,moderator submit bad 1,200,OK,sam_moderator  1-2,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161170838,107,moderator submit good,200,OK,sam_moderator  1-4,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161170882,117,moderator setting delete bad ,200,OK,sam_moderator  1-1,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,115,0,0
+1589161170895,118,moderator submit bad 2,200,OK,sam_moderator  1-2,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,117,0,0
+1589161171013,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-2,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161170945,108,moderator submit bad 1,200,OK,sam_moderator  1-4,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161171014,106,moderator setting save good ,200,OK,sam_moderator  1-2,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161170727,434,moderator setting unpublsih good,200,OK,sam_moderator  1-5,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,434,0,328
+1589161171054,108,moderator submit bad 2,200,OK,sam_moderator  1-4,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161171163,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-4,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161170778,435,moderator setting save bad ,200,OK,sam_moderator  1-3,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,435,0,325
+1589161171120,106,moderator setting delete good ,200,OK,sam_moderator  1-2,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161171161,107,moderator setting query good,200,OK,sam_moderator  1-5,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161171163,109,moderator setting save good ,200,OK,sam_moderator  1-4,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161171213,110,moderator setting delete bad ,200,OK,sam_moderator  1-3,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,110,0,0
+1589161171226,113,moderator setting update good ,200,OK,sam_moderator  1-2,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,113,0,0
+1589161171268,122,moderator setting save bad ,200,OK,sam_moderator  1-5,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,122,0,0
+1589161171272,134,moderator setting delete good ,200,OK,sam_moderator  1-4,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,134,0,0
+1589161171324,111,moderator setting update bad ,200,OK,sam_moderator  1-3,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,111,0,0
+1589161170999,466,moderator setting update bad ,200,OK,sam_moderator  1-1,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,466,0,328
+1589161171340,126,moderator setting publsih good,200,OK,sam_moderator  1-2,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,126,0,0
+1589161171408,117,moderator setting update good ,200,OK,sam_moderator  1-4,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,117,0,0
+1589161171391,141,moderator setting delete bad ,200,OK,sam_moderator  1-5,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,141,0,0
+1589161171436,111,moderator setting publsih bad,200,OK,sam_moderator  1-3,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,111,0,0
+1589161171548,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-3,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161171466,109,moderator setting publsih bad,200,OK,sam_moderator  1-1,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161171468,107,moderator setting unpublsih good,200,OK,sam_moderator  1-2,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161171575,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-1,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161171526,107,moderator setting publsih good,200,OK,sam_moderator  1-4,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161171532,107,moderator setting update bad ,200,OK,sam_moderator  1-5,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161171548,106,moderator setting query bad,200,OK,sam_moderator  1-3,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161171576,107,moderator setting query bad,200,OK,sam_moderator  1-1,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161171575,108,moderator setting query good,200,OK,sam_moderator  1-2,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161171633,108,moderator setting unpublsih good,200,OK,sam_moderator  1-4,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161171639,110,moderator setting publsih bad,200,OK,sam_moderator  1-5,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,110,0,0
+1589161171750,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-5,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161171655,106,moderator submit good,200,OK,sam_moderator  1-3,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161171683,107,moderator submit good,200,OK,sam_moderator  1-1,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161171683,108,moderator setting save bad ,200,OK,sam_moderator  1-2,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161171742,107,moderator setting query good,200,OK,sam_moderator  1-4,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161171751,106,moderator setting query bad,200,OK,sam_moderator  1-5,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161171762,105,moderator submit bad 1,200,OK,sam_moderator  1-3,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161171791,106,moderator setting delete bad ,200,OK,sam_moderator  1-2,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161171790,108,moderator submit bad 1,200,OK,sam_moderator  1-1,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161171857,106,moderator submit good,200,OK,sam_moderator  1-5,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161171868,104,moderator submit bad 2,200,OK,sam_moderator  1-3,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,104,0,0
+1589161171972,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-3,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161171898,105,moderator submit bad 2,200,OK,sam_moderator  1-1,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,104,0,0
+1589161172003,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-1,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161171963,107,moderator submit bad 1,200,OK,sam_moderator  1-5,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161171972,106,moderator setting save good ,200,OK,sam_moderator  1-3,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161172003,107,moderator setting save good ,200,OK,sam_moderator  1-1,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161172070,107,moderator submit bad 2,200,OK,sam_moderator  1-5,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161172177,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-5,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161172078,108,moderator setting delete good ,200,OK,sam_moderator  1-3,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161172110,106,moderator setting delete good ,200,OK,sam_moderator  1-1,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161172178,109,moderator setting save good ,200,OK,sam_moderator  1-5,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161171849,440,moderator setting save bad ,200,OK,sam_moderator  1-4,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,440,0,331
+1589161172186,109,moderator setting update good ,200,OK,sam_moderator  1-3,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161172216,105,moderator setting update good ,200,OK,sam_moderator  1-1,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161171897,430,moderator setting update bad ,200,OK,sam_moderator  1-2,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,430,0,324
+1589161172295,107,moderator setting publsih good,200,OK,sam_moderator  1-3,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161172289,115,moderator setting delete bad ,200,OK,sam_moderator  1-4,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,115,0,0
+1589161172288,117,moderator setting delete good ,200,OK,sam_moderator  1-5,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,116,0,0
+1589161172322,106,moderator setting publsih good,200,OK,sam_moderator  1-1,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161172328,105,moderator setting publsih bad,200,OK,sam_moderator  1-2,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161172434,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-2,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161172405,107,moderator setting unpublsih good,200,OK,sam_moderator  1-3,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161172405,108,moderator setting update bad ,200,OK,sam_moderator  1-4,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161172405,108,moderator setting update good ,200,OK,sam_moderator  1-5,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161172428,111,moderator setting unpublsih good,200,OK,sam_moderator  1-1,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,111,0,0
+1589161172434,106,moderator setting query bad,200,OK,sam_moderator  1-2,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161172512,106,moderator setting query good,200,OK,sam_moderator  1-3,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161172514,106,moderator setting publsih good,200,OK,sam_moderator  1-5,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161172513,108,moderator setting publsih bad,200,OK,sam_moderator  1-4,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161172621,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-4,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161172541,105,moderator submit good,200,OK,sam_moderator  1-2,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,104,0,0
+1589161172540,111,moderator setting query good,200,OK,sam_moderator  1-1,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,111,0,0
+1589161172619,107,moderator setting save bad ,200,OK,sam_moderator  1-3,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161172621,108,moderator setting query bad,200,OK,sam_moderator  1-4,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161172620,114,moderator setting unpublsih good,200,OK,sam_moderator  1-5,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,114,0,0
+1589161172646,107,moderator submit bad 1,200,OK,sam_moderator  1-2,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161172652,105,moderator setting save bad ,200,OK,sam_moderator  1-1,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161172726,109,moderator setting delete bad ,200,OK,sam_moderator  1-3,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161172729,109,moderator submit good,200,OK,sam_moderator  1-4,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161172753,106,moderator submit bad 2,200,OK,sam_moderator  1-2,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161172859,1,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-2,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161172757,106,moderator setting delete bad ,200,OK,sam_moderator  1-1,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161172839,107,moderator submit bad 1,200,OK,sam_moderator  1-4,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161172860,106,moderator setting save good ,200,OK,sam_moderator  1-2,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161172863,105,moderator setting update bad ,200,OK,sam_moderator  1-1,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161172946,108,moderator submit bad 2,200,OK,sam_moderator  1-4,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161173055,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-4,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161172968,105,moderator setting publsih bad,200,OK,sam_moderator  1-1,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161172966,107,moderator setting delete good ,200,OK,sam_moderator  1-2,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161173073,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-1,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161173055,112,moderator setting save good ,200,OK,sam_moderator  1-4,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,112,0,0
+1589161172734,435,moderator setting query good,200,OK,sam_moderator  1-5,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,435,0,325
+1589161173074,106,moderator setting update good ,200,OK,sam_moderator  1-2,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161172836,429,moderator setting update bad ,200,OK,sam_moderator  1-3,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,429,0,323
+1589161173168,107,moderator setting delete good ,200,OK,sam_moderator  1-4,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161173169,107,moderator setting save bad ,200,OK,sam_moderator  1-5,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161173180,110,moderator setting publsih good,200,OK,sam_moderator  1-2,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161173266,105,moderator setting publsih bad,200,OK,sam_moderator  1-3,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161173372,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-3,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161173276,108,moderator setting update good ,200,OK,sam_moderator  1-4,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161173276,109,moderator setting delete bad ,200,OK,sam_moderator  1-5,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161173290,107,moderator setting unpublsih good,200,OK,sam_moderator  1-2,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161173372,110,moderator setting query bad,200,OK,sam_moderator  1-3,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,110,0,0
+1589161173384,110,moderator setting publsih good,200,OK,sam_moderator  1-4,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,110,0,0
+1589161173385,110,moderator setting update bad ,200,OK,sam_moderator  1-5,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161173402,106,moderator setting query good,200,OK,sam_moderator  1-2,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161173074,476,moderator setting query bad,200,OK,sam_moderator  1-1,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,475,0,333
+1589161173483,105,moderator submit good,200,OK,sam_moderator  1-3,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161173494,109,moderator setting unpublsih good,200,OK,sam_moderator  1-4,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161173495,109,moderator setting publsih bad,200,OK,sam_moderator  1-5,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161173604,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-5,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161173509,106,moderator setting save bad ,200,OK,sam_moderator  1-2,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161173550,107,moderator submit good,200,OK,sam_moderator  1-1,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161173588,106,moderator submit bad 1,200,OK,sam_moderator  1-3,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161173604,109,moderator setting query good,200,OK,sam_moderator  1-4,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161173605,108,moderator setting query bad,200,OK,sam_moderator  1-5,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161173615,106,moderator setting delete bad ,200,OK,sam_moderator  1-2,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161173658,107,moderator submit bad 1,200,OK,sam_moderator  1-1,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161173694,106,moderator submit bad 2,200,OK,sam_moderator  1-3,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161173800,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-3,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161173713,108,moderator setting save bad ,200,OK,sam_moderator  1-4,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161173713,108,moderator submit good,200,OK,sam_moderator  1-5,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161173722,106,moderator setting update bad ,200,OK,sam_moderator  1-2,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161173766,112,moderator submit bad 2,200,OK,sam_moderator  1-1,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,112,0,0
+1589161173878,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-1,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161173801,104,moderator setting save good ,200,OK,sam_moderator  1-3,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,104,0,0
+1589161173822,107,moderator setting delete bad ,200,OK,sam_moderator  1-4,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161173828,106,moderator setting publsih bad,200,OK,sam_moderator  1-2,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161173934,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-2,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161173822,116,moderator submit bad 1,200,OK,sam_moderator  1-5,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,115,0,0
+1589161173879,106,moderator setting save good ,200,OK,sam_moderator  1-1,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161173905,108,moderator setting delete good ,200,OK,sam_moderator  1-3,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161173938,107,moderator submit bad 2,200,OK,sam_moderator  1-5,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161174045,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-5,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161173986,107,moderator setting delete good ,200,OK,sam_moderator  1-1,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161174014,105,moderator setting update good ,200,OK,sam_moderator  1-3,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161174046,113,moderator setting save good ,200,OK,sam_moderator  1-5,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,113,0,0
+1589161174093,109,moderator setting update good ,200,OK,sam_moderator  1-1,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161174119,105,moderator setting publsih good,200,OK,sam_moderator  1-3,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161174160,107,moderator setting delete good ,200,OK,sam_moderator  1-5,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161174202,107,moderator setting publsih good,200,OK,sam_moderator  1-1,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161174225,105,moderator setting unpublsih good,200,OK,sam_moderator  1-3,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161174267,107,moderator setting update good ,200,OK,sam_moderator  1-5,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161173935,445,moderator setting query bad,200,OK,sam_moderator  1-2,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,445,0,339
+1589161173929,458,moderator setting update bad ,200,OK,sam_moderator  1-4,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,457,0,347
+1589161174309,107,moderator setting unpublsih good,200,OK,sam_moderator  1-1,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161174330,106,moderator setting query good,200,OK,sam_moderator  1-3,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161174374,109,moderator setting publsih good,200,OK,sam_moderator  1-5,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161174380,108,moderator submit good,200,OK,sam_moderator  1-2,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161174387,108,moderator setting publsih bad,200,OK,sam_moderator  1-4,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161174496,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-4,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161174416,107,moderator setting query good,200,OK,sam_moderator  1-1,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161174436,107,moderator setting save bad ,200,OK,sam_moderator  1-3,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161174483,110,moderator setting unpublsih good,200,OK,sam_moderator  1-5,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,110,0,0
+1589161174488,112,moderator submit bad 1,200,OK,sam_moderator  1-2,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,112,0,0
+1589161174497,113,moderator setting query bad,200,OK,sam_moderator  1-4,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,113,0,0
+1589161174524,108,moderator setting save bad ,200,OK,sam_moderator  1-1,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161174544,106,moderator setting delete bad ,200,OK,sam_moderator  1-3,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161174593,108,moderator setting query good,200,OK,sam_moderator  1-5,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161174601,105,moderator submit bad 2,200,OK,sam_moderator  1-2,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161174707,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-2,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161174610,105,moderator submit good,200,OK,sam_moderator  1-4,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161174632,106,moderator setting delete bad ,200,OK,sam_moderator  1-1,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161174651,105,moderator setting update bad ,200,OK,sam_moderator  1-3,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161174701,108,moderator setting save bad ,200,OK,sam_moderator  1-5,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161174708,106,moderator setting save good ,200,OK,sam_moderator  1-2,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161174715,106,moderator submit bad 1,200,OK,sam_moderator  1-4,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161174739,114,moderator setting update bad ,200,OK,sam_moderator  1-1,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,114,0,0
+1589161174756,108,moderator setting publsih bad,200,OK,sam_moderator  1-3,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161174864,1,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-3,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161174814,106,moderator setting delete good ,200,OK,sam_moderator  1-2,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161174821,106,moderator submit bad 2,200,OK,sam_moderator  1-4,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161174927,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-4,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161174853,107,moderator setting publsih bad,200,OK,sam_moderator  1-1,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161174961,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-1,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161174925,114,moderator setting update good ,200,OK,sam_moderator  1-2,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,114,0,0
+1589161174927,113,moderator setting save good ,200,OK,sam_moderator  1-4,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,113,0,0
+1589161174961,106,moderator setting query bad,200,OK,sam_moderator  1-1,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161175040,107,moderator setting delete good ,200,OK,sam_moderator  1-4,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161175040,107,moderator setting publsih good,200,OK,sam_moderator  1-2,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161175068,106,moderator submit good,200,OK,sam_moderator  1-1,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161174809,432,moderator setting delete bad ,200,OK,sam_moderator  1-5,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,432,0,326
+1589161175147,108,moderator setting update good ,200,OK,sam_moderator  1-4,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161175147,108,moderator setting unpublsih good,200,OK,sam_moderator  1-2,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161174865,434,moderator setting query bad,200,OK,sam_moderator  1-3,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,434,0,327
+1589161175241,107,moderator setting update bad ,200,OK,sam_moderator  1-5,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161175256,109,moderator setting publsih good,200,OK,sam_moderator  1-4,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161175256,109,moderator setting query good,200,OK,sam_moderator  1-2,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161175299,108,moderator submit good,200,OK,sam_moderator  1-3,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161175349,107,moderator setting publsih bad,200,OK,sam_moderator  1-5,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161175456,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-5,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161175365,109,moderator setting unpublsih good,200,OK,sam_moderator  1-4,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161175365,115,moderator setting save bad ,200,OK,sam_moderator  1-2,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,114,0,0
+1589161175418,112,moderator submit bad 1,200,OK,sam_moderator  1-3,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,112,0,0
+1589161175457,106,moderator setting query bad,200,OK,sam_moderator  1-5,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161175474,108,moderator setting query good,200,OK,sam_moderator  1-4,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161175480,107,moderator setting delete bad ,200,OK,sam_moderator  1-2,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161175175,445,moderator submit bad 1,200,OK,sam_moderator  1-1,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,445,0,338
+1589161175530,108,moderator submit bad 2,200,OK,sam_moderator  1-3,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161175638,1,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-3,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161175563,106,moderator submit good,200,OK,sam_moderator  1-5,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161175583,107,moderator setting save bad ,200,OK,sam_moderator  1-4,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161175587,105,moderator setting update bad ,200,OK,sam_moderator  1-2,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161175620,109,moderator submit bad 2,200,OK,sam_moderator  1-1,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161175729,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-1,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161175639,109,moderator setting save good ,200,OK,sam_moderator  1-3,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161175670,107,moderator submit bad 1,200,OK,sam_moderator  1-5,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161175691,106,moderator setting delete bad ,200,OK,sam_moderator  1-4,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161175692,112,moderator setting publsih bad,200,OK,sam_moderator  1-2,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,112,0,0
+1589161175804,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-2,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161175730,109,moderator setting save good ,200,OK,sam_moderator  1-1,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161175748,113,moderator setting delete good ,200,OK,sam_moderator  1-3,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,113,0,0
+1589161175778,106,moderator submit bad 2,200,OK,sam_moderator  1-5,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161175885,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-5,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161175797,109,moderator setting update bad ,200,OK,sam_moderator  1-4,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161175805,108,moderator setting query bad,200,OK,sam_moderator  1-2,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161175840,107,moderator setting delete good ,200,OK,sam_moderator  1-1,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161175862,119,moderator setting update good ,200,OK,sam_moderator  1-3,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,119,0,0
+1589161175885,106,moderator setting save good ,200,OK,sam_moderator  1-5,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161175906,105,moderator setting publsih bad,200,OK,sam_moderator  1-4,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161176011,1,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-4,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161175913,108,moderator submit good,200,OK,sam_moderator  1-2,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161175947,107,moderator setting update good ,200,OK,sam_moderator  1-1,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161175981,113,moderator setting publsih good,200,OK,sam_moderator  1-3,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,112,0,0
+1589161175991,105,moderator setting delete good ,200,OK,sam_moderator  1-5,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161176055,108,moderator setting publsih good,200,OK,sam_moderator  1-1,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161176097,105,moderator setting update good ,200,OK,sam_moderator  1-5,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161176094,110,moderator setting unpublsih good,200,OK,sam_moderator  1-3,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,110,0,0
+1589161176163,108,moderator setting unpublsih good,200,OK,sam_moderator  1-1,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161176202,106,moderator setting publsih good,200,OK,sam_moderator  1-5,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161176204,106,moderator setting query good,200,OK,sam_moderator  1-3,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161176271,109,moderator setting query good,200,OK,sam_moderator  1-1,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161176308,108,moderator setting unpublsih good,200,OK,sam_moderator  1-5,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161176310,115,moderator setting save bad ,200,OK,sam_moderator  1-3,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,115,0,0
+1589161176012,440,moderator setting query bad,200,OK,sam_moderator  1-4,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,440,0,329
+1589161176021,444,moderator submit bad 1,200,OK,sam_moderator  1-2,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,444,0,333
+1589161176380,115,moderator setting save bad ,200,OK,sam_moderator  1-1,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,115,0,0
+1589161176420,105,moderator setting query good,200,OK,sam_moderator  1-5,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161176424,108,moderator setting delete bad ,200,OK,sam_moderator  1-3,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161176451,109,moderator submit good,200,OK,sam_moderator  1-4,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161176464,106,moderator submit bad 2,200,OK,sam_moderator  1-2,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161176570,1,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-2,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161176495,109,moderator setting delete bad ,200,OK,sam_moderator  1-1,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161176532,118,moderator setting update bad ,200,OK,sam_moderator  1-3,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,117,0,0
+1589161176526,128,moderator setting save bad ,200,OK,sam_moderator  1-5,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,128,0,0
+1589161176561,106,moderator submit bad 1,200,OK,sam_moderator  1-4,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161176571,107,moderator setting save good ,200,OK,sam_moderator  1-2,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161176604,111,moderator setting update bad ,200,OK,sam_moderator  1-1,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,111,0,0
+1589161176650,108,moderator setting publsih bad,200,OK,sam_moderator  1-3,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161176758,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-3,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161176654,108,moderator setting delete bad ,200,OK,sam_moderator  1-5,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161176668,108,moderator submit bad 2,200,OK,sam_moderator  1-4,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161176777,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-4,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161176678,108,moderator setting delete good ,200,OK,sam_moderator  1-2,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161176715,107,moderator setting publsih bad,200,OK,sam_moderator  1-1,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161176822,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-1,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161176759,108,moderator setting query bad,200,OK,sam_moderator  1-3,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161176762,113,moderator setting update bad ,200,OK,sam_moderator  1-5,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,112,0,0
+1589161176777,107,moderator setting save good ,200,OK,sam_moderator  1-4,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161176786,115,moderator setting update good ,200,OK,sam_moderator  1-2,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,115,0,0
+1589161176823,114,moderator setting query bad,200,OK,sam_moderator  1-1,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,114,0,0
+1589161176884,110,moderator setting delete good ,200,OK,sam_moderator  1-4,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,110,0,0
+1589161176902,116,moderator setting publsih good,200,OK,sam_moderator  1-2,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,114,0,0
+1589161176938,107,moderator submit good,200,OK,sam_moderator  1-1,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161176994,105,moderator setting update good ,200,OK,sam_moderator  1-4,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161177019,107,moderator setting unpublsih good,200,OK,sam_moderator  1-2,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161177045,108,moderator submit bad 1,200,OK,sam_moderator  1-1,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161177100,108,moderator setting publsih good,200,OK,sam_moderator  1-4,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161177126,107,moderator setting query good,200,OK,sam_moderator  1-2,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161177153,107,moderator submit bad 2,200,OK,sam_moderator  1-1,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161177260,1,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-1,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161176867,422,moderator submit good,200,OK,sam_moderator  1-3,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,421,0,315
+1589161176875,422,moderator setting publsih bad,200,OK,sam_moderator  1-5,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,422,0,315
+1589161177298,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-5,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161177208,108,moderator setting unpublsih good,200,OK,sam_moderator  1-4,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161177233,107,moderator setting save bad ,200,OK,sam_moderator  1-2,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161177289,107,moderator submit bad 1,200,OK,sam_moderator  1-3,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161177298,106,moderator setting query bad,200,OK,sam_moderator  1-5,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161177316,108,moderator setting query good,200,OK,sam_moderator  1-4,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161177340,107,moderator setting delete bad ,200,OK,sam_moderator  1-2,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161177396,107,moderator submit bad 2,200,OK,sam_moderator  1-3,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161177503,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-3,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161177411,107,moderator submit good,200,OK,sam_moderator  1-5,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161177425,107,moderator setting save bad ,200,OK,sam_moderator  1-4,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161177447,112,moderator setting update bad ,200,OK,sam_moderator  1-2,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,112,0,0
+1589161177504,108,moderator setting save good ,200,OK,sam_moderator  1-3,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161177519,106,moderator submit bad 1,200,OK,sam_moderator  1-5,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161177532,108,moderator setting delete bad ,200,OK,sam_moderator  1-4,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161177559,110,moderator setting publsih bad,200,OK,sam_moderator  1-2,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,110,0,0
+1589161177669,1,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-2,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161177261,433,moderator setting save good ,200,OK,sam_moderator  1-1,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,433,0,322
+1589161177612,105,moderator setting delete good ,200,OK,sam_moderator  1-3,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161177625,106,moderator submit bad 2,200,OK,sam_moderator  1-5,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161177732,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-5,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161177641,106,moderator setting update bad ,200,OK,sam_moderator  1-4,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161177670,110,moderator setting query bad,200,OK,sam_moderator  1-2,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,110,0,0
+1589161177694,107,moderator setting delete good ,200,OK,sam_moderator  1-1,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161177718,105,moderator setting update good ,200,OK,sam_moderator  1-3,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,104,0,0
+1589161177732,107,moderator setting save good ,200,OK,sam_moderator  1-5,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161177747,105,moderator setting publsih bad,200,OK,sam_moderator  1-4,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161177852,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-4,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161177780,108,moderator submit good,200,OK,sam_moderator  1-2,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161177801,107,moderator setting update good ,200,OK,sam_moderator  1-1,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161177823,112,moderator setting publsih good,200,OK,sam_moderator  1-3,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,112,0,0
+1589161177839,105,moderator setting delete good ,200,OK,sam_moderator  1-5,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161177853,105,moderator setting query bad,200,OK,sam_moderator  1-4,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161177888,113,moderator submit bad 1,200,OK,sam_moderator  1-2,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,112,0,0
+1589161177908,122,moderator setting publsih good,200,OK,sam_moderator  1-1,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,122,0,0
+1589161177935,111,moderator setting unpublsih good,200,OK,sam_moderator  1-3,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,111,0,0
+1589161177944,114,moderator setting update good ,200,OK,sam_moderator  1-5,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,114,0,0
+1589161177958,110,moderator submit good,200,OK,sam_moderator  1-4,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,110,0,0
+1589161178001,109,moderator submit bad 2,200,OK,sam_moderator  1-2,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161178110,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-2,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161178030,117,moderator setting unpublsih good,200,OK,sam_moderator  1-1,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,117,0,0
+1589161178046,111,moderator setting query good,200,OK,sam_moderator  1-3,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,111,0,0
+1589161178059,107,moderator setting publsih good,200,OK,sam_moderator  1-5,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161178147,110,moderator setting query good,200,OK,sam_moderator  1-1,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,110,0,0
+1589161178157,108,moderator setting save bad ,200,OK,sam_moderator  1-3,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161178166,118,moderator setting unpublsih good,200,OK,sam_moderator  1-5,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,118,0,0
+1589161178257,108,moderator setting save bad ,200,OK,sam_moderator  1-1,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161178265,116,moderator setting delete bad ,200,OK,sam_moderator  1-3,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,116,0,0
+1589161178284,109,moderator setting query good,200,OK,sam_moderator  1-5,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161178365,113,moderator setting delete bad ,200,OK,sam_moderator  1-1,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,113,0,0
+1589161178381,116,moderator setting update bad ,200,OK,sam_moderator  1-3,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,116,0,0
+1589161178393,113,moderator setting save bad ,200,OK,sam_moderator  1-5,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,113,0,0
+1589161178068,439,moderator submit bad 1,200,OK,sam_moderator  1-4,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,439,0,321
+1589161178110,426,moderator setting save good ,200,OK,sam_moderator  1-2,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,426,0,315
+1589161178478,110,moderator setting update bad ,200,OK,sam_moderator  1-1,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,110,0,0
+1589161178497,108,moderator setting publsih bad,200,OK,sam_moderator  1-3,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161178605,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-3,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161178506,117,moderator setting delete bad ,200,OK,sam_moderator  1-5,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,116,0,0
+1589161178508,116,moderator submit bad 2,200,OK,sam_moderator  1-4,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,116,0,0
+1589161178624,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-4,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161178536,111,moderator setting delete good ,200,OK,sam_moderator  1-2,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,111,0,0
+1589161178588,108,moderator setting publsih bad,200,OK,sam_moderator  1-1,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161178696,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-1,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161178605,116,moderator setting query bad,200,OK,sam_moderator  1-3,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,116,0,0
+1589161178625,118,moderator setting save good ,200,OK,sam_moderator  1-4,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,118,0,0
+1589161178623,128,moderator setting update bad ,200,OK,sam_moderator  1-5,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,128,0,0
+1589161178647,124,moderator setting update good ,200,OK,sam_moderator  1-2,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,124,0,0
+1589161178696,115,moderator setting query bad,200,OK,sam_moderator  1-1,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,114,0,0
+1589161178721,108,moderator submit good,200,OK,sam_moderator  1-3,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161178743,115,moderator setting delete good ,200,OK,sam_moderator  1-4,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,115,0,0
+1589161178751,115,moderator setting publsih bad,200,OK,sam_moderator  1-5,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,115,0,0
+1589161178866,1,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-5,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161178771,106,moderator setting publsih good,200,OK,sam_moderator  1-2,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161178811,106,moderator submit good,200,OK,sam_moderator  1-1,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161178829,106,moderator submit bad 1,200,OK,sam_moderator  1-3,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161178858,106,moderator setting update good ,200,OK,sam_moderator  1-4,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161178867,125,moderator setting query bad,200,OK,sam_moderator  1-5,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,125,0,0
+1589161178877,123,moderator setting unpublsih good,200,OK,sam_moderator  1-2,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,123,0,0
+1589161178917,107,moderator submit bad 1,200,OK,sam_moderator  1-1,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161178964,126,moderator setting publsih good,200,OK,sam_moderator  1-4,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,126,0,0
+1589161179000,119,moderator setting query good,200,OK,sam_moderator  1-2,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,119,0,0
+1589161179024,107,moderator submit bad 2,200,OK,sam_moderator  1-1,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161179132,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-1,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161179090,122,moderator setting unpublsih good,200,OK,sam_moderator  1-4,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,118,0,0
+1589161179119,126,moderator setting save bad ,200,OK,sam_moderator  1-2,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,126,0,0
+1589161179132,116,moderator setting save good ,200,OK,sam_moderator  1-1,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,116,0,0
+1589161179213,113,moderator setting query good,200,OK,sam_moderator  1-4,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,112,0,0
+1589161179245,126,moderator setting delete bad ,200,OK,sam_moderator  1-2,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,126,0,0
+1589161178935,436,moderator submit bad 2,200,OK,sam_moderator  1-3,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,436,0,314
+1589161179372,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-3,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161179248,125,moderator setting delete good ,200,OK,sam_moderator  1-1,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,125,0,0
+1589161178992,433,moderator submit good,200,OK,sam_moderator  1-5,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,432,0,322
+1589161179326,109,moderator setting save bad ,200,OK,sam_moderator  1-4,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161179371,113,moderator setting update bad ,200,OK,sam_moderator  1-2,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,113,0,0
+1589161179372,113,moderator setting save good ,200,OK,sam_moderator  1-3,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,112,0,0
+1589161179425,106,moderator submit bad 1,200,OK,sam_moderator  1-5,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161179435,110,moderator setting delete bad ,200,OK,sam_moderator  1-4,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,110,0,0
+1589161179484,106,moderator setting publsih bad,200,OK,sam_moderator  1-2,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161179590,1,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-2,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161179485,111,moderator setting delete good ,200,OK,sam_moderator  1-3,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,111,0,0
+1589161179531,122,moderator submit bad 2,200,OK,sam_moderator  1-5,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,121,0,0
+1589161179654,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-5,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161179546,120,moderator setting update bad ,200,OK,sam_moderator  1-4,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,120,0,0
+1589161179591,118,moderator setting query bad,200,OK,sam_moderator  1-2,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,118,0,0
+1589161179597,121,moderator setting update good ,200,OK,sam_moderator  1-3,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,121,0,0
+1589161179655,120,moderator setting save good ,200,OK,sam_moderator  1-5,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,120,0,0
+1589161179666,114,moderator setting publsih bad,200,OK,sam_moderator  1-4,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,113,0,0
+1589161179780,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-4,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161179718,128,moderator setting publsih good,200,OK,sam_moderator  1-3,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,128,0,0
+1589161179710,136,moderator submit good,200,OK,sam_moderator  1-2,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,136,0,0
+1589161179373,475,moderator setting update good ,200,OK,sam_moderator  1-1,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,474,0,333
+1589161179775,128,moderator setting delete good ,200,OK,sam_moderator  1-5,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,127,0,0
+1589161179780,124,moderator setting query bad,200,OK,sam_moderator  1-4,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,124,0,0
+1589161179847,112,moderator submit bad 1,200,OK,sam_moderator  1-2,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,112,0,0
+1589161179846,120,moderator setting unpublsih good,200,OK,sam_moderator  1-3,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,120,0,0
+1589161179848,129,moderator setting publsih good,200,OK,sam_moderator  1-1,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,129,0,0
+1589161179903,116,moderator setting update good ,200,OK,sam_moderator  1-5,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,116,0,0
+1589161179904,116,moderator submit good,200,OK,sam_moderator  1-4,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,116,0,0
+1589161179959,125,moderator submit bad 2,200,OK,sam_moderator  1-2,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,125,0,0
+1589161180084,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-2,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161179967,127,moderator setting query good,200,OK,sam_moderator  1-3,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,127,0,0
+1589161179978,127,moderator setting unpublsih good,200,OK,sam_moderator  1-1,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,127,0,0
+1589161180019,115,moderator setting publsih good,200,OK,sam_moderator  1-5,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,115,0,0
+1589161180020,125,moderator submit bad 1,200,OK,sam_moderator  1-4,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,125,0,0
+1589161180085,118,moderator setting save good ,200,OK,sam_moderator  1-2,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,117,0,0
+1589161180094,111,moderator setting save bad ,200,OK,sam_moderator  1-3,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,111,0,0
+1589161180105,110,moderator setting query good,200,OK,sam_moderator  1-1,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,110,0,0
+1589161180135,109,moderator setting unpublsih good,200,OK,sam_moderator  1-5,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161180206,114,moderator setting delete bad ,200,OK,sam_moderator  1-3,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,113,0,0
+1589161180216,135,moderator setting save bad ,200,OK,sam_moderator  1-1,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,135,0,0
+1589161180244,109,moderator setting query good,200,OK,sam_moderator  1-5,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161180320,110,moderator setting update bad ,200,OK,sam_moderator  1-3,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161180354,106,moderator setting save bad ,200,OK,sam_moderator  1-5,text,true,,5922,381,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161180351,110,moderator setting delete bad ,200,OK,sam_moderator  1-1,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161180430,107,moderator setting publsih bad,200,OK,sam_moderator  1-3,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161180538,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-3,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161180461,114,moderator setting update bad ,200,OK,sam_moderator  1-1,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,113,0,0
+1589161180460,117,moderator setting delete bad ,200,OK,sam_moderator  1-5,text,true,,5922,385,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,116,0,0
+1589161180145,458,moderator submit bad 2,200,OK,sam_moderator  1-4,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,458,0,322
+1589161180603,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-4,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161180203,441,moderator setting delete good ,200,OK,sam_moderator  1-2,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,441,0,334
+1589161180538,107,moderator setting query bad,200,OK,sam_moderator  1-3,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161180577,107,moderator setting update bad ,200,OK,sam_moderator  1-5,text,true,,5922,312,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161180575,110,moderator setting publsih bad,200,OK,sam_moderator  1-1,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,110,0,0
+1589161180686,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-1,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161180603,107,moderator setting save good ,200,OK,sam_moderator  1-4,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161180645,106,moderator submit good,200,OK,sam_moderator  1-3,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161180644,108,moderator setting update good ,200,OK,sam_moderator  1-2,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161180684,105,moderator setting publsih bad,200,OK,sam_moderator  1-5,text,true,,5922,384,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161180790,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-5,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161180686,108,moderator setting query bad,200,OK,sam_moderator  1-1,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161180710,107,moderator setting delete good ,200,OK,sam_moderator  1-4,text,true,,5922,337,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161180751,105,moderator submit bad 1,200,OK,sam_moderator  1-3,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161180752,106,moderator setting publsih good,200,OK,sam_moderator  1-2,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161180790,117,moderator setting query bad,200,OK,sam_moderator  1-5,text,true,,5922,336,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,117,0,0
+1589161180795,114,moderator submit good,200,OK,sam_moderator  1-1,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,114,0,0
+1589161180817,118,moderator setting update good ,200,OK,sam_moderator  1-4,text,true,,5922,339,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,118,0,0
+1589161180857,106,moderator submit bad 2,200,OK,sam_moderator  1-3,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161180963,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-3,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161180859,105,moderator setting unpublsih good,200,OK,sam_moderator  1-2,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161180907,105,moderator submit good,200,OK,sam_moderator  1-5,text,true,,5922,271,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,104,0,0
+1589161180909,108,moderator submit bad 1,200,OK,sam_moderator  1-1,text,true,,5922,266,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161180935,107,moderator setting publsih good,200,OK,sam_moderator  1-4,text,true,,5922,318,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161180964,108,moderator setting query good,200,OK,sam_moderator  1-2,text,true,,5922,319,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161181017,107,moderator submit bad 2,200,OK,sam_moderator  1-1,text,true,,5922,328,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161181124,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-1,text,false,,1306,0,5,5,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161181042,106,moderator setting unpublsih good,200,OK,sam_moderator  1-4,text,true,,5922,319,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161181072,107,moderator setting save bad ,200,OK,sam_moderator  1-2,text,true,,5922,381,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161181148,107,moderator setting query good,200,OK,sam_moderator  1-4,text,true,,5922,319,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161181179,107,moderator setting delete bad ,200,OK,sam_moderator  1-2,text,true,,5922,385,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161181255,109,moderator setting save bad ,200,OK,sam_moderator  1-4,text,true,,5922,381,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161180964,420,moderator setting save good ,200,OK,sam_moderator  1-3,text,true,,5922,336,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,420,0,314
+1589161181286,115,moderator setting update bad ,200,OK,sam_moderator  1-2,text,true,,5922,312,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,115,0,0
+1589161181012,419,moderator submit bad 1,200,OK,sam_moderator  1-5,text,true,,5922,266,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,419,0,313
+1589161181364,107,moderator setting delete bad ,200,OK,sam_moderator  1-4,text,true,,5922,385,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161181385,114,moderator setting delete good ,200,OK,sam_moderator  1-3,text,true,,5922,337,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,114,0,0
+1589161181401,109,moderator setting publsih bad,200,OK,sam_moderator  1-2,text,true,,5922,384,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161181511,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-2,text,false,,1306,0,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161181438,106,moderator submit bad 2,200,OK,sam_moderator  1-5,text,true,,5922,328,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161181544,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-5,text,false,,1306,0,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161181471,106,moderator setting update bad ,200,OK,sam_moderator  1-4,text,true,,5922,312,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161181499,105,moderator setting update good ,200,OK,sam_moderator  1-3,text,true,,5922,339,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161181511,108,moderator setting query bad,200,OK,sam_moderator  1-2,text,true,,5922,336,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161181544,107,moderator setting save good ,200,OK,sam_moderator  1-5,text,true,,5922,336,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161181577,107,moderator setting publsih bad,200,OK,sam_moderator  1-4,text,true,,5922,384,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161181684,1,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-4,text,false,,1306,0,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161181604,107,moderator setting publsih good,200,OK,sam_moderator  1-3,text,true,,5922,318,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161181619,107,moderator submit good,200,OK,sam_moderator  1-2,text,true,,5922,271,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161181651,105,moderator setting delete good ,200,OK,sam_moderator  1-5,text,true,,5922,337,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161181685,106,moderator setting query bad,200,OK,sam_moderator  1-4,text,true,,5922,336,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161181711,105,moderator setting unpublsih good,200,OK,sam_moderator  1-3,text,true,,5922,319,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161181726,107,moderator submit bad 1,200,OK,sam_moderator  1-2,text,true,,5922,266,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161181756,105,moderator setting update good ,200,OK,sam_moderator  1-5,text,true,,5922,339,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161181791,107,moderator submit good,200,OK,sam_moderator  1-4,text,true,,5922,271,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161181817,105,moderator setting query good,200,OK,sam_moderator  1-3,text,true,,5922,319,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161181833,107,moderator submit bad 2,200,OK,sam_moderator  1-2,text,true,,5922,328,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161181942,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-2,text,false,,1306,0,4,4,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161181861,113,moderator setting publsih good,200,OK,sam_moderator  1-5,text,true,,5922,318,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,113,0,0
+1589161181898,106,moderator submit bad 1,200,OK,sam_moderator  1-4,text,true,,5922,266,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161181922,105,moderator setting save bad ,200,OK,sam_moderator  1-3,text,true,,5922,381,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161181974,106,moderator setting unpublsih good,200,OK,sam_moderator  1-5,text,true,,5922,319,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161182005,107,moderator submit bad 2,200,OK,sam_moderator  1-4,text,true,,5922,328,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161182112,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-4,text,false,,1306,0,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161182027,112,moderator setting delete bad ,200,OK,sam_moderator  1-3,text,true,,5922,385,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,111,0,0
+1589161182080,105,moderator setting query good,200,OK,sam_moderator  1-5,text,true,,5922,319,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161182113,107,moderator setting save good ,200,OK,sam_moderator  1-4,text,true,,5922,336,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161182139,108,moderator setting update bad ,200,OK,sam_moderator  1-3,text,true,,5922,312,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161182186,105,moderator setting save bad ,200,OK,sam_moderator  1-5,text,true,,5922,381,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,104,0,0
+1589161182247,107,moderator setting publsih bad,200,OK,sam_moderator  1-3,text,true,,5922,384,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161182355,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-3,text,false,,1306,0,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161182291,105,moderator setting delete bad ,200,OK,sam_moderator  1-5,text,true,,5922,385,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161182355,105,moderator setting query bad,200,OK,sam_moderator  1-3,text,true,,5922,336,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161182397,106,moderator setting update bad ,200,OK,sam_moderator  1-5,text,true,,5922,312,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161182460,105,moderator submit good,200,OK,sam_moderator  1-3,text,true,,5922,271,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161182503,105,moderator setting publsih bad,200,OK,sam_moderator  1-5,text,true,,5922,384,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161182608,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-5,text,false,,1306,0,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161182221,430,moderator setting delete good ,200,OK,sam_moderator  1-4,text,true,,5922,337,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,430,0,323
+1589161182565,141,moderator submit bad 1,200,OK,sam_moderator  1-3,text,true,,5922,266,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,141,0,0
+1589161182609,105,moderator setting query bad,200,OK,sam_moderator  1-5,text,true,,5922,336,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,105,0,0
+1589161182652,108,moderator setting update good ,200,OK,sam_moderator  1-4,text,true,,5922,339,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161182706,110,moderator submit bad 2,200,OK,sam_moderator  1-3,text,true,,5922,328,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161182816,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-3,text,false,,1306,0,3,3,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161182714,111,moderator submit good,200,OK,sam_moderator  1-5,text,true,,5922,271,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,111,0,0
+1589161182761,108,moderator setting publsih good,200,OK,sam_moderator  1-4,text,true,,5922,318,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161182825,106,moderator submit bad 1,200,OK,sam_moderator  1-5,text,true,,5922,266,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161182869,107,moderator setting unpublsih good,200,OK,sam_moderator  1-4,text,true,,5922,319,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161182931,107,moderator submit bad 2,200,OK,sam_moderator  1-5,text,true,,5922,328,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161183038,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-5,text,false,,1306,0,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161182976,109,moderator setting query good,200,OK,sam_moderator  1-4,text,true,,5922,319,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161183085,109,moderator setting save bad ,200,OK,sam_moderator  1-4,text,true,,5922,381,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161183195,106,moderator setting delete bad ,200,OK,sam_moderator  1-4,text,true,,5922,385,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,106,0,0
+1589161183301,108,moderator setting update bad ,200,OK,sam_moderator  1-4,text,true,,5922,312,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161183039,441,moderator setting save good ,200,OK,sam_moderator  1-5,text,true,,5922,336,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,441,0,332
+1589161183409,108,moderator setting publsih bad,200,OK,sam_moderator  1-4,text,true,,5922,384,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161183517,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-4,text,false,,1306,0,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161183481,107,moderator setting delete good ,200,OK,sam_moderator  1-5,text,true,,5922,337,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161183518,107,moderator setting query bad,200,OK,sam_moderator  1-4,text,true,,5922,336,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161183588,107,moderator setting update good ,200,OK,sam_moderator  1-5,text,true,,5922,339,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161183625,107,moderator submit good,200,OK,sam_moderator  1-4,text,true,,5922,271,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161183695,108,moderator setting publsih good,200,OK,sam_moderator  1-5,text,true,,5922,318,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161183732,107,moderator submit bad 1,200,OK,sam_moderator  1-4,text,true,,5922,266,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161183803,113,moderator setting unpublsih good,200,OK,sam_moderator  1-5,text,true,,5922,319,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,113,0,0
+1589161183839,107,moderator submit bad 2,200,OK,sam_moderator  1-4,text,true,,5922,328,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161183946,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-4,text,false,,1306,0,2,2,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161183916,111,moderator setting query good,200,OK,sam_moderator  1-5,text,true,,5922,319,1,1,https://secureassignmentmanager.azurewebsites.net/moderator.html,111,0,0
+1589161184027,108,moderator setting save bad ,200,OK,sam_moderator  1-5,text,true,,5922,381,1,1,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161184136,107,moderator setting delete bad ,200,OK,sam_moderator  1-5,text,true,,5922,385,1,1,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161184243,108,moderator setting update bad ,200,OK,sam_moderator  1-5,text,true,,5922,312,1,1,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161184351,107,moderator setting publsih bad,200,OK,sam_moderator  1-5,text,true,,5922,384,1,1,https://secureassignmentmanager.azurewebsites.net/moderator.html,107,0,0
+1589161184461,0,moderator setting unpublsih bad,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-5,text,false,,1306,0,1,1,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0
+1589161184462,108,moderator setting query bad,200,OK,sam_moderator  1-5,text,true,,5922,336,1,1,https://secureassignmentmanager.azurewebsites.net/moderator.html,108,0,0
+1589161184570,109,moderator submit good,200,OK,sam_moderator  1-5,text,true,,5922,271,1,1,https://secureassignmentmanager.azurewebsites.net/moderator.html,109,0,0
+1589161184679,110,moderator submit bad 1,200,OK,sam_moderator  1-5,text,true,,5922,266,1,1,https://secureassignmentmanager.azurewebsites.net/moderator.html,110,0,0
+1589161184789,110,moderator submit bad 2,200,OK,sam_moderator  1-5,text,true,,5922,328,1,1,https://secureassignmentmanager.azurewebsites.net/moderator.html,110,0,0
+1589161184899,0,moderator submit bad 3,Non HTTP response code: java.lang.IllegalArgumentException,"Non HTTP response message: URLDecoder: Illegal hex characters in escape (%) pattern - Error at index 0 in: ""%%""",sam_moderator  1-5,text,false,,1306,0,1,1,https://secureassignmentmanager.azurewebsites.net/moderator.html,0,0,0

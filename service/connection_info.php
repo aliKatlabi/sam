@@ -23,8 +23,6 @@ $report_table= "report_table";
 $submission_table= "setting_table";
 $block_table= "block_table";
 
-
-
 /* 
 {$GLOBALS['report_table']}
 {$GLOBALS['block_table']}
