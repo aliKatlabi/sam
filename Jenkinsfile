@@ -66,7 +66,7 @@ pipeline {
 			archiveArtifacts artifacts: 'moderator.html', fingerprint: true
 			archiveArtifacts artifacts: 'index.html', fingerprint: true
 			archiveArtifacts artifacts: 'codesniffreults.html', fingerprint: true
-			archiveArtifacts artifacts: 'report.csv', fingerprint: true
+			archiveArtifacts artifacts: 'report.json', fingerprint: true
 		
             deleteDir() /* clean up our workspace */
         }
