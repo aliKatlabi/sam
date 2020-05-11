@@ -9,9 +9,16 @@ pipeline {
 		stage('code sniff') {
 			steps {
 					
-					sh 'echo "<<<Validate composer.json and composer.lock>>>"'
-					
-                    sh ' vendor/squizlabs/php_codesniffer/bin/phpcs service/vendor/squizlabs/php_codesniffer/bin/phpcs service/'
+					sh 'echo "phpcs service/"'
+					echo 'checking starts ..'
+					sh 'echo "Checking code errors.."'
+		
+                    sh 'phpcs -e --colors --generator=HTML service/ >> codesniffreults.html'
+                    sh 'phpcs -v  --colors --report-file="report.json" service/ || true'
+                    
+                	echo 'checking done ..'
+                	
+				
 					
 			   }
 			   
@@ -58,7 +65,9 @@ pipeline {
 			archiveArtifacts artifacts: 'css/**/*.css', fingerprint: true
 			archiveArtifacts artifacts: 'moderator.html', fingerprint: true
 			archiveArtifacts artifacts: 'index.html', fingerprint: true
-			
+			archiveArtifacts artifacts: 'codesniffreults.html', fingerprint: true
+			archiveArtifacts artifacts: 'report.csv', fingerprint: true
+		
             deleteDir() /* clean up our workspace */
         }
         success {
