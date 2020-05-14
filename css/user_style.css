@@ -40,13 +40,15 @@ html {
 	padding: 0px;
 	margin: 0px;
 	color:#00ff00;
+	margin: 0px;
 }
+
 body{
 	position:relative;
 	
 	width:100%;
 	height:600px;
-	margin:0;
+	margin: 0px;
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 15px;
 	line-height: 1.9;
@@ -73,6 +75,7 @@ a:active {
 	background-color: black;
 	color: white;
 }
+
 .input{
 	
 	
@@ -120,9 +123,9 @@ a:active {
 
 .panel_info {
 	width: 100%;
-	height: 20%;
+	height: 200px;;
 	position:relative;
-	
+	margin-bottom:30px;
 }
 
 .panel_info .container{
@@ -137,11 +140,10 @@ a:active {
 
 .panel_info .container .text_area{
 	
-	border-left:1px solid white;
-	border-right:1px solid white;
-	border-top:1px solid white;
+	
+	border:var(--working-border);
 	overflow:auto;
-	border-bottom:0px;
+	
 	
 }
 .panel_info .container .text_area .inf{
@@ -169,7 +171,6 @@ a:active {
 	grid-column: 1/2;
 	grid-row: 1/2;
 	
-	border:var(--working-border);
 
 }
 
@@ -184,8 +185,6 @@ a:active {
 	grid-gap: 0px;
 	
 	
-	background-color: var(--background-container);
-	border:var(--working-border);
 	/*border:var(--working-border);*/
 	
 	
@@ -203,14 +202,13 @@ a:active {
 	    -ms-transition: all .6s ease;
 	     -o-transition: all .6s ease;
 	        transition: all .6s ease;
-			
+	border:var(--working-border);	
 	/* 
 	border-left:1px solid white;
 	border-bottom:1px solid white;
 	border-top:1px solid white;
 	border-right:0px solid white; */
 	
-	border:var(--working-border);
 }
 
 .main .panel_upload .container .dragdrop_area p{
@@ -229,12 +227,12 @@ a:active {
 	margin:auto;
 }
 
-.main .panel_upload .container .dragdrop_area:hover{
+/* .main .panel_upload .container .dragdrop_area:hover{
 
 	background-color: #120212;
 	
 }
-
+ */
 .main .panel_upload .container .control{
 	
 	margin-top:0px;
@@ -270,6 +268,7 @@ a:active {
 	        transition: all .3s ease;
 
 }
+
 /* .main .panel_upload .container .control .file_upload:before {
   content: 'Select some files';
   display: inline-block;
@@ -322,20 +321,16 @@ a:active {
 	grid-column: 2/4;
 	grid-row: 1/2;
 
-	background-color: var(--background);
 	
 }
 .main .panel_query .container  {
 	position: relative;
 	width:100%;
-	
 	height:100%;
 
 	display: grid;
 	grid-gap: 0px;
-	
-	background-color: var(--background-container);
-	
+
 	
 }
 
@@ -348,22 +343,11 @@ a:active {
 	position: relative;
 	
 	width:100%;
-	height:370px;
-
-	max-height:100%;
-	min-height:100%;
-	
 	max-width:100%;
 	min-width:100%;
 	
-	border-right:1px solid white;
-	border-bottom:1px solid white;
-	
-	border-top:1px solid white;
-	border-left:1px solid white;
-	
-	border:1px solid white;
-	
+	border:var(--working-border);	
+
 	grid-row: 1/4;
 	grid-column: 1/2;
 
@@ -450,37 +434,37 @@ a:active {
 	border-left:0px;
 	
 	border:1px solid white;
-	max-height:100%;
-	min-height:100%;
 	
 	max-width:0px;
 	min-width:100%;
 	
 	width:0px;
+	word-wrap:break-word;
+	overflow:auto;
+	font-size: 12px;
+	text-align:start;
+	
+	line-height: 1.9;
+	letter-spacing: 2.5px;
 	
 }
-
+/* 
 .main .panel_query .container .res #q_res{
 	position:relative;
-	
 
-	max-height:inherit;
-	min-height:inherit;
-	
-	max-width:inherit;
-	min-width:inherit;
-	
+	height:100%;
 	
 	word-wrap:break-word;
 	overflow:auto;
 	font-size: 12px;
 	text-align:start;
-	border:var(--working-border);
+	
 	line-height: 1.9;
 	letter-spacing: 2.5px;
 	
 	
 }
+ */
 .panel_query .container .res .q_result_area p {
 	
 }
@@ -526,7 +510,7 @@ footer{
 		grid-row: 2/3;
 	}
 	.main .panel_query .container .res{
-		height:50px;
+		height:150px;
 		grid-column: 1/2;
 		grid-row: 1/2;
 	}

@@ -14,10 +14,10 @@ function service_submit() {
 		xhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
 			
-			document.getElementById("q_res").style.height  = "150px";
-			document.getElementById("q_res").style.padding = "8px 8px 8px 8px";
+			document.getElementById("res").style.height  = "150px";
+			document.getElementById("res").style.padding = "8px 8px 8px 8px";
 			
-			logger(this.responseText,37,"q_res");
+			logger(this.responseText,37,"res");
 			/* 
 			ifHasChanged("index.html", function (nModif, nVisit) {
 			 logger("The page '" + this.filepath + "' has been changed on " + (new Date(nModif)).toLocaleString() + "!",37,"q_res");
@@ -94,7 +94,7 @@ function service_query() {
 			//document.getElementById("q_res").style.borderBottomWidth = "20px";
 			
 			
-			logger(this.responseText,37,"q_res");
+			logger(this.responseText,37,"res");
 		}
   };
 
@@ -106,7 +106,11 @@ function service_query() {
 
 function update_info(){
 	
-	if (window.XMLHttpRequest) {
+	let welocme = "All information will be secured and your identitiy will be hidden,for unbised grading ... enjoy!";
+	
+	if(logger(welocme,1,"text_area")){
+		
+		if (window.XMLHttpRequest) {
 		   xhttp = new XMLHttpRequest();
 		 } else {
 		   xhttp = new ActiveXObject("Microsoft.XMLHTTP");
@@ -121,7 +125,9 @@ function update_info(){
 		}
   };
 
-   xhttp.open("POST","service/user_query_info.php" , true);
+  
+}
+	 xhttp.open("POST","service/user_query_info.php" , true);
    xhttp.send("");
 }
 
@@ -179,5 +185,5 @@ function logger(responsetext,speed,elementid)
 			}
 		}
 	}
-	
+	return true;
 } 
