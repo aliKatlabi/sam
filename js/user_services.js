@@ -14,10 +14,10 @@ function service_submit() {
 		xhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
 			
-			document.getElementById("res").style.height  = "150px";
-			document.getElementById("res").style.padding = "8px 8px 8px 8px";
+			document.getElementById("q_res").style.height  = "150px";
+			document.getElementById("q_res").style.padding = "8px 8px 8px 8px";
 			
-			logger(this.responseText,37,"res");
+			logger(this.responseText,37,"q_res");
 			/* 
 			ifHasChanged("index.html", function (nModif, nVisit) {
 			 logger("The page '" + this.filepath + "' has been changed on " + (new Date(nModif)).toLocaleString() + "!",37,"q_res");
@@ -26,16 +26,12 @@ function service_submit() {
 		}
   };
   
-	xhttp.addEventListener("progress", updateProgress);
-	xhttp.addEventListener("load", transferComplete);
-	xhttp.addEventListener("error", transferFailed);
-	xhttp.addEventListener("abort", transferCanceled);
-
+	
 	xhttp.open("POST","service/user_update_db.php" , true);
 	xhttp.send(fd);
 }
 
-function updateProgress (oEvent) {
+/* function updateProgress (oEvent) {
   if (oEvent.lengthComputable) {
     var percentComplete = oEvent.loaded / oEvent.total * 100;
 	
@@ -63,7 +59,7 @@ function transferFailed(evt) {
 function transferCanceled(evt) {
 	 document.getElementById("q_res").innerHTML+="The transfer has been canceled by the user."+"<br>";
 
-}
+} */
 
 
 
@@ -94,7 +90,7 @@ function service_query() {
 			//document.getElementById("q_res").style.borderBottomWidth = "20px";
 			
 			
-			logger(this.responseText,37,"res");
+			logger(this.responseText,37,"q_res");
 		}
   };
 
@@ -106,10 +102,7 @@ function service_query() {
 
 function update_info(){
 	
-	let welocme = "All information will be secured and your identitiy will be hidden,for unbised grading ... enjoy!";
-	
-	if(logger(welocme,1,"text_area")){
-		
+
 		if (window.XMLHttpRequest) {
 		   xhttp = new XMLHttpRequest();
 		 } else {
@@ -121,14 +114,14 @@ function update_info(){
 		{
 			
 			 logger(this.responseText,37,"text_area");
-		
+		 
 		}
   };
-
+	
+	xhttp.open("POST","service/user_query_info.php" , true);
+    xhttp.send("");
   
-}
-	 xhttp.open("POST","service/user_query_info.php" , true);
-   xhttp.send("");
+
 }
 
 ////////////////////// testing last modified date changes

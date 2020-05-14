@@ -176,7 +176,7 @@ function execute($connect, $op , $qops , $subCode){
 		}
 	}
 	if($update){
-		$ex = subjectnameexist($connect, $subCode);
+		$ex = subjectexist($connect, $subCode);
 		
 		 if($ex){
 			 if ($connect->query($sql_option) === TRUE) {
@@ -206,7 +206,7 @@ function execute($connect, $op , $qops , $subCode){
 	}
 	
 	if($publish){
-		$ex = subjectnameexist($connect, $subCode);
+		$ex = subjectexist($connect, $subCode);
 		
 		if($ex)
 		{

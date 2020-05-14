@@ -1,7 +1,7 @@
 <?php
 
-/* 
-$servername = "mysql.caesar.elte.hu";
+
+/* $servername = "mysql.caesar.elte.hu";
 $username = "alikatlabi";
 $password = "WimgnHENWgITEhxr";
 $dbname = "alikatlabi";
@@ -10,8 +10,8 @@ $file_table= "File_Table";
 $report_table= "Report_Table";
 $submission_table= "submission_Table";
 $block_table= "Block_Table";
-
  */
+
  
 $servername = "secureassignmentmanagerdb.mysql.database.azure.com";
 $username = "alikatlabi@secureassignmentmanagerdb";

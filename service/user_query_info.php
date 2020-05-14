@@ -28,7 +28,7 @@ if ($conn->connect_error) {
 					$max		 	= $row["max"];
 					$deadLine 		= $row["deadLine"];
 					
-					$message = "> Assignment of Subject : ".$SubjectName."  should be submitted before: "
+					$message = "  Assignment of Subject : ".$SubjectName."  should be submitted before: "
 					.$deadLine." --- maximum grade is : ".$max."  minimum is : ".$min."<br>";
 								
 					echo $message;
