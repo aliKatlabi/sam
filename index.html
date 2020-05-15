@@ -47,6 +47,10 @@
 					</div>
 					
 					<script>
+					const fileTypes = [
+								  "application/pdf"
+								];
+								
 	let dropArea = document.getElementById('dragdrop_area');
 
 	  dropArea.addEventListener('dragenter', handleDragenter, false);
@@ -74,23 +78,22 @@
 		}
 		
 	function handleDrop(e) {
-	
+		  e.preventDefault();
 		  let dt = e.dataTransfer;
 		  let file = dt.files[0];
 		  let input = document.getElementById('file_id');
-		  input.files[0] = file;
 		  
+		  input.files = dt.files;
+		  var log 	= document.getElementById('file_txt');
+		log.innerHTML = file.type;
 		  if(validFileType(file)){
-									var log 	= document.getElementById('file_txt');
-									log.innerHTML = file.name;
-								
-								}else{
-								
-									
-									var log 	= document.getElementById('file_txt');
-									log.innerHTML = " NOT SUPPORTED TYPE";
-									input.files[0].clear;
-								}
+				var log 	= document.getElementById('file_txt');
+				log.innerHTML = file.name;
+			}else{
+				var log 	= document.getElementById('file_txt');
+				log.innerHTML = "not supported";
+				input.files[0].clear;
+			}
 		}
 	
 	</script>
@@ -106,9 +109,7 @@
 						<input type="button"  value="Submit" class="button_submit" style="grid-column: 1/2" onclick=service_submit() > 
 						</input>
 						<script>
-							const fileTypes = [
-								  "application/pdf"
-								];
+							
 							function validFileType(file) {
 								  return fileTypes.includes(file.type);
 								}

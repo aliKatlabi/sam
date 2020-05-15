@@ -196,7 +196,9 @@ function mine($block,$difficulty)
             $block->Hash = $block->calculateHash();
 			
 			if($block->nonce%5==0){
+				
 					echo "<span> * <span> ";
+				
 			}
         }
 		echo "<br>";
